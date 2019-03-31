@@ -1,0 +1,4 @@
+#Sun Mar 31 09:44:17 EEST 2019
+base.0=/Users/gl-zarqa-macbookpro/Downloads/MyProject/app/build/intermediates/transforms/dexMerger/debug/6
+path.0=classes.dex
+renamed.0=classes.dex

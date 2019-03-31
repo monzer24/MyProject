@@ -1,0 +1,269 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml:2:1-26:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/ec89d70a7d2b4a5cf44ae8a5e82b0452/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/4ee1cad561696b53ea1b5fb3d979ef53/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-vision-17.0.2.aar/ad959b4b31847b7b187dd5a873958b66/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/13c7a0498b24d89b7f99681716c09edb/AndroidManifest.xml:17:1-39:12
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-17.0.2.aar/64297fa2c2478ec5d8b5e041654816be/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-16.0.0.aar/118d93823d42d43f631359403c1a727f/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-16.0.0.aar/afc0a68fea3e207aed846304ee0e7856/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-16.0.0.aar/0d26168d57b91ee199c2b809c74f1e6d/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-flags-16.0.1.aar/35bde1a2af1f2a6d40a35806bae29834/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-phenotype-16.0.0.aar/c9bd0b6a8069fcb1794dc231a17bbb6b/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/91c58164d972a45e632190563cbea894/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/c092baf9c2d58acfe6fc940c9d9d7b9f/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/1e4f05966c6cfa6677a3fa8f10000df5/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/410596106434e2ef7e8682115b7e4845/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/ce97246558e5823aa5248743a6414bec/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/937e04168df93f51eaee45eae23d3f11/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/b7b1f8e3b7c7b997e89d545aac84c061/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/9db31d0307fc1908e637f6120386a167/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/5387d522393eca63be66c2b84e319b25/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/f9c6e74f1c6da01f89b636422ea80c2d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/71c775dd00186d62fd0bcfd37a7a5402/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/22e58631209decffc8f20a4ac8d2eb49/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/4f7a1f606044a208424a714bb119c6df/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/04523c5884e577cb63d9a38ce7b93bcf/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/eddd678eab783bbdd08b77efb59e5cc4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/cb52b00575d528ccff51a1a6d1dfc3e2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/81a436e1c7ec2b41a11d288e72e46c53/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/a13f9535b7131428d3133cf6700300bf/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/d3e1e46ca103629e2dd3d7293e952a15/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/a5ae352e37c5567568ec06bec586c54b/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/2f38b4eb53a4be07e853c83d28dd6d17/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/57dba774bb5bb355993dffe5cd808871/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/750b2c008f7ede80055668ca93db38f9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/f45821d7bff7b7e4e155e5450a4f4ed1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/6e9e5b8b311ad9204cea2cbbfde4aab0/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/5c62684e0848be3ae17f7f1a777530dd/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/4d6c70ca3bec7997b5b04cd0d1031da4/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/c1aa6a2409779b34d3914ab0653c02df/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/6584c86f57a731c6a88001332e809272/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/5949a9361c6c41b31f5eb124b8bb0430/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml:2:1-26:12
+	package
+		ADDED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml:4:5-33
+		INJECTED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml
+		ADDED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml:2:1-26:12
+		INJECTED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml
+		ADDED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml:2:1-26:12
+		INJECTED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.CAMERA
+ADDED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml:5:5-64
+	android:name
+		ADDED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml:5:22-62
+application
+ADDED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml:7:5-24:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/4ee1cad561696b53ea1b5fb3d979ef53/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/4ee1cad561696b53ea1b5fb3d979ef53/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-vision-17.0.2.aar/ad959b4b31847b7b187dd5a873958b66/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-vision-17.0.2.aar/ad959b4b31847b7b187dd5a873958b66/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/13c7a0498b24d89b7f99681716c09edb/AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/13c7a0498b24d89b7f99681716c09edb/AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-17.0.2.aar/64297fa2c2478ec5d8b5e041654816be/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-17.0.2.aar/64297fa2c2478ec5d8b5e041654816be/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-16.0.0.aar/0d26168d57b91ee199c2b809c74f1e6d/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-16.0.0.aar/0d26168d57b91ee199c2b809c74f1e6d/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-phenotype-16.0.0.aar/c9bd0b6a8069fcb1794dc231a17bbb6b/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-phenotype-16.0.0.aar/c9bd0b6a8069fcb1794dc231a17bbb6b/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/91c58164d972a45e632190563cbea894/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/91c58164d972a45e632190563cbea894/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/c092baf9c2d58acfe6fc940c9d9d7b9f/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/c092baf9c2d58acfe6fc940c9d9d7b9f/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/1e4f05966c6cfa6677a3fa8f10000df5/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/1e4f05966c6cfa6677a3fa8f10000df5/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/410596106434e2ef7e8682115b7e4845/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/410596106434e2ef7e8682115b7e4845/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/a13f9535b7131428d3133cf6700300bf/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/a13f9535b7131428d3133cf6700300bf/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/d3e1e46ca103629e2dd3d7293e952a15/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/d3e1e46ca103629e2dd3d7293e952a15/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/a5ae352e37c5567568ec06bec586c54b/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/a5ae352e37c5567568ec06bec586c54b/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/d3e1e46ca103629e2dd3d7293e952a15/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml:12:9-35
+	android:label
+		ADDED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml:10:9-41
+	tools:ignore
+		ADDED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml:14:9-48
+	android:roundIcon
+		ADDED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml:11:9-54
+	android:icon
+		ADDED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml:9:9-43
+	android:allowBackup
+		ADDED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml:8:9-35
+	android:theme
+		ADDED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml:13:9-40
+activity#com.projects.check.MainActivity
+ADDED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml:15:9-21:20
+	android:name
+		ADDED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml:15:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml:16:13-20:29
+action#android.intent.action.MAIN
+ADDED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml:17:17-69
+	android:name
+		ADDED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml:17:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml:19:17-77
+	android:name
+		ADDED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml:19:27-74
+meta-data#com.google.android.gms.vision.DEPENDENCIES
+ADDED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml:23:9-99
+	android:value
+		ADDED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml:23:78-97
+	android:name
+		ADDED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml:23:20-77
+uses-sdk
+INJECTED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml
+INJECTED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/ec89d70a7d2b4a5cf44ae8a5e82b0452/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/ec89d70a7d2b4a5cf44ae8a5e82b0452/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/4ee1cad561696b53ea1b5fb3d979ef53/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/4ee1cad561696b53ea1b5fb3d979ef53/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-vision-17.0.2.aar/ad959b4b31847b7b187dd5a873958b66/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-vision-17.0.2.aar/ad959b4b31847b7b187dd5a873958b66/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/13c7a0498b24d89b7f99681716c09edb/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/13c7a0498b24d89b7f99681716c09edb/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-17.0.2.aar/64297fa2c2478ec5d8b5e041654816be/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-17.0.2.aar/64297fa2c2478ec5d8b5e041654816be/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-16.0.0.aar/118d93823d42d43f631359403c1a727f/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-16.0.0.aar/118d93823d42d43f631359403c1a727f/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-16.0.0.aar/afc0a68fea3e207aed846304ee0e7856/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-16.0.0.aar/afc0a68fea3e207aed846304ee0e7856/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-16.0.0.aar/0d26168d57b91ee199c2b809c74f1e6d/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-16.0.0.aar/0d26168d57b91ee199c2b809c74f1e6d/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-flags-16.0.1.aar/35bde1a2af1f2a6d40a35806bae29834/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-flags-16.0.1.aar/35bde1a2af1f2a6d40a35806bae29834/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-phenotype-16.0.0.aar/c9bd0b6a8069fcb1794dc231a17bbb6b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-phenotype-16.0.0.aar/c9bd0b6a8069fcb1794dc231a17bbb6b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/91c58164d972a45e632190563cbea894/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/91c58164d972a45e632190563cbea894/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/c092baf9c2d58acfe6fc940c9d9d7b9f/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/c092baf9c2d58acfe6fc940c9d9d7b9f/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/1e4f05966c6cfa6677a3fa8f10000df5/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/1e4f05966c6cfa6677a3fa8f10000df5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/410596106434e2ef7e8682115b7e4845/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/410596106434e2ef7e8682115b7e4845/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/ce97246558e5823aa5248743a6414bec/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/ce97246558e5823aa5248743a6414bec/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/937e04168df93f51eaee45eae23d3f11/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/937e04168df93f51eaee45eae23d3f11/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/b7b1f8e3b7c7b997e89d545aac84c061/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/b7b1f8e3b7c7b997e89d545aac84c061/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/9db31d0307fc1908e637f6120386a167/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/9db31d0307fc1908e637f6120386a167/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/5387d522393eca63be66c2b84e319b25/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/5387d522393eca63be66c2b84e319b25/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/f9c6e74f1c6da01f89b636422ea80c2d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/f9c6e74f1c6da01f89b636422ea80c2d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/71c775dd00186d62fd0bcfd37a7a5402/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/71c775dd00186d62fd0bcfd37a7a5402/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/22e58631209decffc8f20a4ac8d2eb49/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/22e58631209decffc8f20a4ac8d2eb49/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/4f7a1f606044a208424a714bb119c6df/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/4f7a1f606044a208424a714bb119c6df/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/04523c5884e577cb63d9a38ce7b93bcf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/04523c5884e577cb63d9a38ce7b93bcf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/eddd678eab783bbdd08b77efb59e5cc4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/eddd678eab783bbdd08b77efb59e5cc4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/cb52b00575d528ccff51a1a6d1dfc3e2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/cb52b00575d528ccff51a1a6d1dfc3e2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/81a436e1c7ec2b41a11d288e72e46c53/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/81a436e1c7ec2b41a11d288e72e46c53/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/a13f9535b7131428d3133cf6700300bf/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/a13f9535b7131428d3133cf6700300bf/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-compat:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/d3e1e46ca103629e2dd3d7293e952a15/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/d3e1e46ca103629e2dd3d7293e952a15/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/a5ae352e37c5567568ec06bec586c54b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/a5ae352e37c5567568ec06bec586c54b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/2f38b4eb53a4be07e853c83d28dd6d17/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/2f38b4eb53a4be07e853c83d28dd6d17/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/57dba774bb5bb355993dffe5cd808871/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/57dba774bb5bb355993dffe5cd808871/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/750b2c008f7ede80055668ca93db38f9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/750b2c008f7ede80055668ca93db38f9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/f45821d7bff7b7e4e155e5450a4f4ed1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/f45821d7bff7b7e4e155e5450a4f4ed1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/6e9e5b8b311ad9204cea2cbbfde4aab0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/6e9e5b8b311ad9204cea2cbbfde4aab0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/5c62684e0848be3ae17f7f1a777530dd/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/5c62684e0848be3ae17f7f1a777530dd/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/4d6c70ca3bec7997b5b04cd0d1031da4/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/4d6c70ca3bec7997b5b04cd0d1031da4/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/c1aa6a2409779b34d3914ab0653c02df/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/c1aa6a2409779b34d3914ab0653c02df/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/6584c86f57a731c6a88001332e809272/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/6584c86f57a731c6a88001332e809272/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/5949a9361c6c41b31f5eb124b8bb0430/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/5949a9361c6c41b31f5eb124b8bb0430/AndroidManifest.xml:20:5-44
+INJECTED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml
+INJECTED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v4:26.1.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/410596106434e2ef7e8682115b7e4845/AndroidManifest.xml:23:9-51
+	android:targetSdkVersion
+		INJECTED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml
+		ADDED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml
+		ADDED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/gl-zarqa-macbookpro/Downloads/MyProject/app/src/main/AndroidManifest.xml
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:16.0.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/13c7a0498b24d89b7f99681716c09edb/AndroidManifest.xml:23:9-27:75
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/13c7a0498b24d89b7f99681716c09edb/AndroidManifest.xml:25:13-46
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/13c7a0498b24d89b7f99681716c09edb/AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/13c7a0498b24d89b7f99681716c09edb/AndroidManifest.xml:27:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/13c7a0498b24d89b7f99681716c09edb/AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:16.0.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/13c7a0498b24d89b7f99681716c09edb/AndroidManifest.xml:33:9-36:110
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/13c7a0498b24d89b7f99681716c09edb/AndroidManifest.xml:35:13-36
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/13c7a0498b24d89b7f99681716c09edb/AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/13c7a0498b24d89b7f99681716c09edb/AndroidManifest.xml:34:13-89
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/91c58164d972a45e632190563cbea894/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/91c58164d972a45e632190563cbea894/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/91c58164d972a45e632190563cbea894/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/91c58164d972a45e632190563cbea894/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:16.1.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/1e4f05966c6cfa6677a3fa8f10000df5/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:16.1.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/1e4f05966c6cfa6677a3fa8f10000df5/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:16.1.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/1e4f05966c6cfa6677a3fa8f10000df5/AndroidManifest.xml:24:13-58
+meta-data#android.support.VERSION
+ADDED from [com.android.support:support-v4:26.1.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/410596106434e2ef7e8682115b7e4845/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/a13f9535b7131428d3133cf6700300bf/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/a13f9535b7131428d3133cf6700300bf/AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:support-v4:26.1.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/410596106434e2ef7e8682115b7e4845/AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:support-v4:26.1.0] /Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/410596106434e2ef7e8682115b7e4845/AndroidManifest.xml:27:13-51

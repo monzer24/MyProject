@@ -4,23 +4,6 @@
             "outputFile": "/Users/gl-zarqa-imac-6/Desktop/MyProject/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sr/values-sr.xml",
             "map": [
                 {
-                    "source": "/Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/4a61fb39144ecc8a70a2957e7f757f98/res/values-sr/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "188",
-                        "endOffsets": "435"
-                    },
-                    "to": {
-                        "startLines": "37",
-                        "startColumns": "4",
-                        "startOffsets": "3972",
-                        "endColumns": "188",
-                        "endOffsets": "4156"
-                    }
-                },
-                {
                     "source": "/Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/4c7340cebdf88a3bfad7636af3f6f702/res/values-sr/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
@@ -69,6 +52,23 @@
                         "startOffsets": "5564",
                         "endColumns": "100",
                         "endOffsets": "5660"
+                    }
+                },
+                {
+                    "source": "/Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.2.0.aar/ccff68933c2ca6723089a5c02d7e00a1/res/values-sr/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "188",
+                        "endOffsets": "435"
+                    },
+                    "to": {
+                        "startLines": "37",
+                        "startColumns": "4",
+                        "startOffsets": "3972",
+                        "endColumns": "188",
+                        "endOffsets": "4156"
                     }
                 }
             ]

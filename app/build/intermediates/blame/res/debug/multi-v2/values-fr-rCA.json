@@ -4,7 +4,7 @@
             "outputFile": "/Users/gl-zarqa-imac-6/Desktop/MyProject/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fr-rCA/values-fr-rCA.xml",
             "map": [
                 {
-                    "source": "/Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/4a61fb39144ecc8a70a2957e7f757f98/res/values-fr-rCA/values.xml",
+                    "source": "/Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.2.0.aar/ccff68933c2ca6723089a5c02d7e00a1/res/values-fr-rCA/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",

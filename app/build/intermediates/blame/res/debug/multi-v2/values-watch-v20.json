@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/gl-zarqa-macbookpro/Downloads/MyProject/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml",
+            "outputFile": "/Users/gl-zarqa-imac-6/Desktop/MyProject/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
-                    "source": "/Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/42aadf082cd8af6328abdd2b9e734318/res/values-watch-v20/values-watch-v20.xml",
+                    "source": "/Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/1938ab1e6eb765b45217d43be8e50452/res/values-watch-v20/values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/gl-zarqa-macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/446fdabfdc826d0cb4cff79c360c84cd/res/values-watch-v20/values.xml",
+                    "source": "/Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/f79ba0e7ecec00054a56c234789477ca/res/values-watch-v20/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11",
                         "startColumns": "0,0,0,0,0,0,0,0",

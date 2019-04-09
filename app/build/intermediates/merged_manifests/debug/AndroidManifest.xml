@@ -9,6 +9,8 @@
         android:targetSdkVersion="28" />
 
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.hardware.camera2.full" />
 
     <application
         android:allowBackup="true"
@@ -27,6 +29,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.projects.check.CapturedImage" />
+        <activity android:name="com.projects.check.CheckInfo" />
 
         <meta-data
             android:name="com.google.android.gms.vision.DEPENDENCIES"
@@ -57,11 +61,6 @@
         <meta-data
             android:name="android.support.VERSION"
             android:value="26.1.0" />
-
-        <provider
-            android:name="com.android.tools.ir.server.InstantRunContentProvider"
-            android:authorities="com.projects.check.com.android.tools.ir.server.InstantRunContentProvider"
-            android:multiprocess="true" />
     </application>
 
 </manifest>

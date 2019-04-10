@@ -126,8 +126,9 @@ public class MainActivity extends AppCompatActivity {
             {
                 width = jpegSizes[0].getWidth();
                 height = jpegSizes[0].getHeight();
+                System.out.println(width + " " + height);
             }
-            final ImageReader reader = ImageReader.newInstance(width,height,ImageFormat.JPEG,1);
+            final ImageReader reader = ImageReader.newInstance(width/2,height/2,ImageFormat.JPEG,1);
             List<Surface> outputSurface = new ArrayList<>(2);
             outputSurface.add(reader.getSurface());
             outputSurface.add(new Surface(textureView.getSurfaceTexture()));

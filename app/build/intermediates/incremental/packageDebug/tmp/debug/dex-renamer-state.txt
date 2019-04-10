@@ -1,7 +1,10 @@
-#Tue Apr 09 14:08:18 EEST 2019
-base.0=/Users/gl-zarqa-imac-6/Desktop/MyProject/app/build/intermediates/dex/debug/mergeProjectDexDebug/out
+#Wed Apr 10 11:06:26 EEST 2019
+path.2=classes2.dex
 path.1=classes.dex
-renamed.1=classes2.dex
 path.0=classes.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
 renamed.0=classes.dex
+base.2=/Users/gl-zarqa-imac-6/Desktop/MyProject/app/build/intermediates/dex/debug/mergeExtDexDebug/out
 base.1=/Users/gl-zarqa-imac-6/Desktop/MyProject/app/build/intermediates/dex/debug/mergeExtDexDebug/out
+base.0=/Users/gl-zarqa-imac-6/Desktop/MyProject/app/build/intermediates/dex/debug/mergeProjectDexDebug/out

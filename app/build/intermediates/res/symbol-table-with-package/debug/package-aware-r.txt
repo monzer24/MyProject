@@ -834,6 +834,7 @@ id standard
 id start
 id status_bar_latest_event_content
 id submenuarrow
+id submit
 id submit_area
 id submited
 id tabMode

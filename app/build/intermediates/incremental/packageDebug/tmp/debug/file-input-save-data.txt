@@ -1,11 +1,15 @@
 #Internal package file, do not edit.
-#Sun Apr 07 13:41:12 EEST 2019
-1.base=/Users/gl-zarqa-imac-6/Desktop/MyProject/app/build/intermediates/dex/debug/mergeProjectDexDebug/out
+#Tue Apr 09 15:58:45 EEST 2019
+1.base=/Users/gl-zarqa-imac-6/Desktop/MyProject/app/build/intermediates/dex/debug/mergeExtDexDebug/out
+2.path=classes.dex
 0.baseType=DIRECTORY
+2.base=/Users/gl-zarqa-imac-6/Desktop/MyProject/app/build/intermediates/dex/debug/mergeProjectDexDebug/out
+2.set=DEX
 1.baseType=DIRECTORY
-count=2
+count=3
 1.set=DEX
 0.path=classes.dex
 0.set=DEX
 0.base=/Users/gl-zarqa-imac-6/Desktop/MyProject/app/build/intermediates/dex/debug/mergeExtDexDebug/out
-1.path=classes.dex
+2.baseType=DIRECTORY
+1.path=classes2.dex

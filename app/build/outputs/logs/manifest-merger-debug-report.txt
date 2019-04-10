@@ -9,18 +9,22 @@ MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/gl-z
 MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-vision-17.0.2.aar/4339b4a5b21f561639eb5bbb41c81330/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-auth:16.0.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/f79ba0e7ecec00054a56c234789477ca/AndroidManifest.xml:17:1-39:12
 MERGED from [com.google.firebase:firebase-core:16.0.8] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.8.aar/6392d7fd0ae1cfeb5c8614c2ed1ea949/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-storage:16.1.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.1.0.aar/9f9d8a58628625ef16b4eb090fd66069/AndroidManifest.xml:15:1-37:12
+MERGED from [com.google.firebase:firebase-auth:16.2.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.2.1.aar/eed3bd48fbbf15d07b1638a9338fa410/AndroidManifest.xml:17:1-42:12
+MERGED from [com.google.firebase:firebase-firestore:18.2.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-firestore-18.2.0.aar/6c846c3af8cde8317c9a2f4205447c6e/AndroidManifest.xml:2:1-24:12
 MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-17.0.2.aar/0974a8d2cc7315d3925527cd308e5cbf/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-16.0.0.aar/359bc6dd6c481b97ad10ccc76936d8a5/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-16.0.0.aar/58beffa3c8a8d447efa8f9c91e5887c0/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-16.0.0.aar/16abe3342cbc292e0b87189ef683e65f/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-flags-16.0.1.aar/0355cdc9f41ccca81da1268b8e0c5412/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.1.aar/e3dfe6ce6d0201886e57e7be7911b909/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-16.0.0.aar/16abe3342cbc292e0b87189ef683e65f/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-phenotype-16.0.0.aar/a3929e9fdd962bcd068693a5a504c429/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-analytics:16.4.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.4.0.aar/2707a3099e366919d8cba0e848536503/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.4.0.aar/eb8ebc5c8fca09926c85cb168597b024/AndroidManifest.xml:17:1-36:12
 MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/78c1e26762a943665d2801a7bd92b4f8/AndroidManifest.xml:17:1-59:12
 MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/8327877333a6f4499c69927845140526/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/4c7340cebdf88a3bfad7636af3f6f702/AndroidManifest.xml:17:1-29:12
-MERGED from [com.google.firebase:firebase-common:16.0.3] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/9b975cc40810d77283d91169a2528cff/AndroidManifest.xml:2:1-17:12
+MERGED from [com.google.firebase:firebase-common:16.1.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-common-16.1.0.aar/01eef251db8ba4740248312beb3f9cad/AndroidManifest.xml:2:1-19:12
 MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/d88164ab0fd0e40819228172fe6e367d/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/88a0a7e7326894ff40194b72987fad8b/AndroidManifest.xml:17:1-55:12
 MERGED from [com.google.android.gms:play-services-measurement-sdk:16.4.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-measurement-sdk-16.4.0.aar/59a3f68a5d7c3ee87413f57d65090562/AndroidManifest.xml:17:1-25:12
@@ -58,6 +62,9 @@ MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/gl-zarqa-imac-6/.grad
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/ed662d0ab5b96d4ec7d170098a5e5264/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/de29355e87fefd8247ffdd0042f8e4f6/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:interpolator:28.0.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/9650733a86be80360bdb70a208e8d670/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-database-collection:16.0.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-16.0.1.aar/a944868cd7bf5bd8b0089c4ea82a4761/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.firebase:protolite-well-known-types:16.0.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/protolite-well-known-types-16.0.1.aar/be5f3f2b822e22071b62953f12863072/AndroidManifest.xml:2:1-11:12
+MERGED from [io.grpc:grpc-android:1.16.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/grpc-android-1.16.1.aar/5b10d437f2d7bd70d60d73b54d459bdd/AndroidManifest.xml:2:1-13:12
 INJECTED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml:2:1-31:12
 INJECTED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml:2:1-31:12
 INJECTED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml:2:1-31:12
@@ -99,8 +106,16 @@ MERGED from [com.google.android.gms:play-services-auth:16.0.1] /Users/gl-zarqa-i
 MERGED from [com.google.android.gms:play-services-auth:16.0.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/f79ba0e7ecec00054a56c234789477ca/AndroidManifest.xml:22:5-37:19
 MERGED from [com.google.firebase:firebase-core:16.0.8] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.8.aar/6392d7fd0ae1cfeb5c8614c2ed1ea949/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-core:16.0.8] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.8.aar/6392d7fd0ae1cfeb5c8614c2ed1ea949/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-storage:16.1.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.1.0.aar/9f9d8a58628625ef16b4eb090fd66069/AndroidManifest.xml:29:5-35:19
+MERGED from [com.google.firebase:firebase-storage:16.1.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.1.0.aar/9f9d8a58628625ef16b4eb090fd66069/AndroidManifest.xml:29:5-35:19
+MERGED from [com.google.firebase:firebase-auth:16.2.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.2.1.aar/eed3bd48fbbf15d07b1638a9338fa410/AndroidManifest.xml:23:5-40:19
+MERGED from [com.google.firebase:firebase-auth:16.2.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.2.1.aar/eed3bd48fbbf15d07b1638a9338fa410/AndroidManifest.xml:23:5-40:19
+MERGED from [com.google.firebase:firebase-firestore:18.2.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-firestore-18.2.0.aar/6c846c3af8cde8317c9a2f4205447c6e/AndroidManifest.xml:16:5-22:19
+MERGED from [com.google.firebase:firebase-firestore:18.2.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-firestore-18.2.0.aar/6c846c3af8cde8317c9a2f4205447c6e/AndroidManifest.xml:16:5-22:19
 MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-17.0.2.aar/0974a8d2cc7315d3925527cd308e5cbf/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-17.0.2.aar/0974a8d2cc7315d3925527cd308e5cbf/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.1.aar/e3dfe6ce6d0201886e57e7be7911b909/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.1.aar/e3dfe6ce6d0201886e57e7be7911b909/AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-16.0.0.aar/16abe3342cbc292e0b87189ef683e65f/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-16.0.0.aar/16abe3342cbc292e0b87189ef683e65f/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-phenotype-16.0.0.aar/a3929e9fdd962bcd068693a5a504c429/AndroidManifest.xml:22:5-20
@@ -115,8 +130,8 @@ MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/gl-zarqa-im
 MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/8327877333a6f4499c69927845140526/AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/4c7340cebdf88a3bfad7636af3f6f702/AndroidManifest.xml:22:5-27:19
 MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/4c7340cebdf88a3bfad7636af3f6f702/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.firebase:firebase-common:16.0.3] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/9b975cc40810d77283d91169a2528cff/AndroidManifest.xml:9:5-15:19
-MERGED from [com.google.firebase:firebase-common:16.0.3] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/9b975cc40810d77283d91169a2528cff/AndroidManifest.xml:9:5-15:19
+MERGED from [com.google.firebase:firebase-common:16.1.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-common-16.1.0.aar/01eef251db8ba4740248312beb3f9cad/AndroidManifest.xml:11:5-17:19
+MERGED from [com.google.firebase:firebase-common:16.1.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-common-16.1.0.aar/01eef251db8ba4740248312beb3f9cad/AndroidManifest.xml:11:5-17:19
 MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/d88164ab0fd0e40819228172fe6e367d/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/d88164ab0fd0e40819228172fe6e367d/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/88a0a7e7326894ff40194b72987fad8b/AndroidManifest.xml:28:5-53:19
@@ -203,16 +218,24 @@ MERGED from [com.google.android.gms:play-services-auth:16.0.1] /Users/gl-zarqa-i
 MERGED from [com.google.android.gms:play-services-auth:16.0.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/f79ba0e7ecec00054a56c234789477ca/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-core:16.0.8] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.8.aar/6392d7fd0ae1cfeb5c8614c2ed1ea949/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-core:16.0.8] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.8.aar/6392d7fd0ae1cfeb5c8614c2ed1ea949/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-storage:16.1.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.1.0.aar/9f9d8a58628625ef16b4eb090fd66069/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-storage:16.1.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.1.0.aar/9f9d8a58628625ef16b4eb090fd66069/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-auth:16.2.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.2.1.aar/eed3bd48fbbf15d07b1638a9338fa410/AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-auth:16.2.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.2.1.aar/eed3bd48fbbf15d07b1638a9338fa410/AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-firestore:18.2.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-firestore-18.2.0.aar/6c846c3af8cde8317c9a2f4205447c6e/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-firestore:18.2.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-firestore-18.2.0.aar/6c846c3af8cde8317c9a2f4205447c6e/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-17.0.2.aar/0974a8d2cc7315d3925527cd308e5cbf/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-17.0.2.aar/0974a8d2cc7315d3925527cd308e5cbf/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-16.0.0.aar/359bc6dd6c481b97ad10ccc76936d8a5/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-16.0.0.aar/359bc6dd6c481b97ad10ccc76936d8a5/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-16.0.0.aar/58beffa3c8a8d447efa8f9c91e5887c0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-16.0.0.aar/58beffa3c8a8d447efa8f9c91e5887c0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-16.0.0.aar/16abe3342cbc292e0b87189ef683e65f/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-16.0.0.aar/16abe3342cbc292e0b87189ef683e65f/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-flags-16.0.1.aar/0355cdc9f41ccca81da1268b8e0c5412/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-flags-16.0.1.aar/0355cdc9f41ccca81da1268b8e0c5412/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.1.aar/e3dfe6ce6d0201886e57e7be7911b909/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.1.aar/e3dfe6ce6d0201886e57e7be7911b909/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-16.0.0.aar/16abe3342cbc292e0b87189ef683e65f/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-16.0.0.aar/16abe3342cbc292e0b87189ef683e65f/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-phenotype-16.0.0.aar/a3929e9fdd962bcd068693a5a504c429/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-phenotype-16.0.0.aar/a3929e9fdd962bcd068693a5a504c429/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-analytics:16.4.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.4.0.aar/2707a3099e366919d8cba0e848536503/AndroidManifest.xml:5:5-44
@@ -225,8 +248,8 @@ MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/gl-zarqa-im
 MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/8327877333a6f4499c69927845140526/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/4c7340cebdf88a3bfad7636af3f6f702/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/4c7340cebdf88a3bfad7636af3f6f702/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-common:16.0.3] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/9b975cc40810d77283d91169a2528cff/AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.firebase:firebase-common:16.0.3] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/9b975cc40810d77283d91169a2528cff/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-common:16.1.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-common-16.1.0.aar/01eef251db8ba4740248312beb3f9cad/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common:16.1.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-common-16.1.0.aar/01eef251db8ba4740248312beb3f9cad/AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/d88164ab0fd0e40819228172fe6e367d/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/d88164ab0fd0e40819228172fe6e367d/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/88a0a7e7326894ff40194b72987fad8b/AndroidManifest.xml:20:5-44
@@ -301,6 +324,12 @@ MERGED from [android.arch.core:runtime:1.1.1] /Users/gl-zarqa-imac-6/.gradle/cac
 MERGED from [android.arch.core:runtime:1.1.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/de29355e87fefd8247ffdd0042f8e4f6/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:interpolator:28.0.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/9650733a86be80360bdb70a208e8d670/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:interpolator:28.0.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/9650733a86be80360bdb70a208e8d670/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-database-collection:16.0.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-16.0.1.aar/a944868cd7bf5bd8b0089c4ea82a4761/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-database-collection:16.0.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-16.0.1.aar/a944868cd7bf5bd8b0089c4ea82a4761/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:protolite-well-known-types:16.0.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/protolite-well-known-types-16.0.1.aar/be5f3f2b822e22071b62953f12863072/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:protolite-well-known-types:16.0.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/protolite-well-known-types-16.0.1.aar/be5f3f2b822e22071b62953f12863072/AndroidManifest.xml:7:5-9:41
+MERGED from [io.grpc:grpc-android:1.16.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/grpc-android-1.16.1.aar/5b10d437f2d7bd70d60d73b54d459bdd/AndroidManifest.xml:7:5-9:41
+MERGED from [io.grpc:grpc-android:1.16.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/grpc-android-1.16.1.aar/5b10d437f2d7bd70d60d73b54d459bdd/AndroidManifest.xml:7:5-9:41
 INJECTED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml
 INJECTED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml
 	tools:overrideLibrary
@@ -331,20 +360,12 @@ ADDED from [com.google.android.gms:play-services-auth:16.0.1] /Users/gl-zarqa-im
 		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/f79ba0e7ecec00054a56c234789477ca/AndroidManifest.xml:36:13-107
 	android:name
 		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/f79ba0e7ecec00054a56c234789477ca/AndroidManifest.xml:34:13-89
-uses-permission#android.permission.INTERNET
-ADDED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.4.0.aar/eb8ebc5c8fca09926c85cb168597b024/AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/78c1e26762a943665d2801a7bd92b4f8/AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/78c1e26762a943665d2801a7bd92b4f8/AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/88a0a7e7326894ff40194b72987fad8b/AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/88a0a7e7326894ff40194b72987fad8b/AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-measurement-impl-16.4.0.aar/caca7db94e97ea2218b5f5c21207a7fc/AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-measurement-impl-16.4.0.aar/caca7db94e97ea2218b5f5c21207a7fc/AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-measurement-sdk-api-16.4.0.aar/ebd5f3a680a95c264b8ca510189407a5/AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-measurement-sdk-api-16.4.0.aar/ebd5f3a680a95c264b8ca510189407a5/AndroidManifest.xml:23:5-67
-	android:name
-		ADDED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.4.0.aar/eb8ebc5c8fca09926c85cb168597b024/AndroidManifest.xml:22:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.4.0.aar/eb8ebc5c8fca09926c85cb168597b024/AndroidManifest.xml:23:5-79
+ADDED from [com.google.firebase:firebase-storage:16.1.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.1.0.aar/9f9d8a58628625ef16b4eb090fd66069/AndroidManifest.xml:26:5-79
+MERGED from [com.google.firebase:firebase-firestore:18.2.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-firestore-18.2.0.aar/6c846c3af8cde8317c9a2f4205447c6e/AndroidManifest.xml:13:5-79
+MERGED from [com.google.firebase:firebase-firestore:18.2.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-firestore-18.2.0.aar/6c846c3af8cde8317c9a2f4205447c6e/AndroidManifest.xml:13:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.4.0.aar/eb8ebc5c8fca09926c85cb168597b024/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.4.0.aar/eb8ebc5c8fca09926c85cb168597b024/AndroidManifest.xml:23:5-79
 MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/78c1e26762a943665d2801a7bd92b4f8/AndroidManifest.xml:22:5-79
 MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/78c1e26762a943665d2801a7bd92b4f8/AndroidManifest.xml:22:5-79
 MERGED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/88a0a7e7326894ff40194b72987fad8b/AndroidManifest.xml:24:5-79
@@ -353,8 +374,74 @@ MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] /User
 MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-measurement-impl-16.4.0.aar/caca7db94e97ea2218b5f5c21207a7fc/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-measurement-sdk-api-16.4.0.aar/ebd5f3a680a95c264b8ca510189407a5/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-measurement-sdk-api-16.4.0.aar/ebd5f3a680a95c264b8ca510189407a5/AndroidManifest.xml:24:5-79
+MERGED from [io.grpc:grpc-android:1.16.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/grpc-android-1.16.1.aar/5b10d437f2d7bd70d60d73b54d459bdd/AndroidManifest.xml:11:5-79
+MERGED from [io.grpc:grpc-android:1.16.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/grpc-android-1.16.1.aar/5b10d437f2d7bd70d60d73b54d459bdd/AndroidManifest.xml:11:5-79
 	android:name
-		ADDED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.4.0.aar/eb8ebc5c8fca09926c85cb168597b024/AndroidManifest.xml:23:22-76
+		ADDED from [com.google.firebase:firebase-storage:16.1.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.1.0.aar/9f9d8a58628625ef16b4eb090fd66069/AndroidManifest.xml:26:22-76
+uses-permission#android.permission.INTERNET
+ADDED from [com.google.firebase:firebase-storage:16.1.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.1.0.aar/9f9d8a58628625ef16b4eb090fd66069/AndroidManifest.xml:27:5-67
+MERGED from [com.google.firebase:firebase-firestore:18.2.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-firestore-18.2.0.aar/6c846c3af8cde8317c9a2f4205447c6e/AndroidManifest.xml:14:5-67
+MERGED from [com.google.firebase:firebase-firestore:18.2.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-firestore-18.2.0.aar/6c846c3af8cde8317c9a2f4205447c6e/AndroidManifest.xml:14:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.4.0.aar/eb8ebc5c8fca09926c85cb168597b024/AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.4.0.aar/eb8ebc5c8fca09926c85cb168597b024/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/78c1e26762a943665d2801a7bd92b4f8/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/78c1e26762a943665d2801a7bd92b4f8/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/88a0a7e7326894ff40194b72987fad8b/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/88a0a7e7326894ff40194b72987fad8b/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-measurement-impl-16.4.0.aar/caca7db94e97ea2218b5f5c21207a7fc/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-measurement-impl-16.4.0.aar/caca7db94e97ea2218b5f5c21207a7fc/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-measurement-sdk-api-16.4.0.aar/ebd5f3a680a95c264b8ca510189407a5/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-measurement-sdk-api-16.4.0.aar/ebd5f3a680a95c264b8ca510189407a5/AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from [com.google.firebase:firebase-storage:16.1.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.1.0.aar/9f9d8a58628625ef16b4eb090fd66069/AndroidManifest.xml:27:22-64
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-storage:16.1.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.1.0.aar/9f9d8a58628625ef16b4eb090fd66069/AndroidManifest.xml:30:9-34:19
+MERGED from [com.google.firebase:firebase-auth:16.2.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.2.1.aar/eed3bd48fbbf15d07b1638a9338fa410/AndroidManifest.xml:33:9-39:19
+MERGED from [com.google.firebase:firebase-auth:16.2.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.2.1.aar/eed3bd48fbbf15d07b1638a9338fa410/AndroidManifest.xml:33:9-39:19
+MERGED from [com.google.firebase:firebase-firestore:18.2.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-firestore-18.2.0.aar/6c846c3af8cde8317c9a2f4205447c6e/AndroidManifest.xml:17:9-21:19
+MERGED from [com.google.firebase:firebase-firestore:18.2.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-firestore-18.2.0.aar/6c846c3af8cde8317c9a2f4205447c6e/AndroidManifest.xml:17:9-21:19
+MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.4.0.aar/eb8ebc5c8fca09926c85cb168597b024/AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.4.0.aar/eb8ebc5c8fca09926c85cb168597b024/AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/78c1e26762a943665d2801a7bd92b4f8/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/78c1e26762a943665d2801a7bd92b4f8/AndroidManifest.xml:29:9-35:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:16.2.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.2.1.aar/eed3bd48fbbf15d07b1638a9338fa410/AndroidManifest.xml:35:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-storage:16.1.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.1.0.aar/9f9d8a58628625ef16b4eb090fd66069/AndroidManifest.xml:30:18-89
+meta-data#com.google.firebase.components:com.google.firebase.storage.StorageRegistrar
+ADDED from [com.google.firebase:firebase-storage:16.1.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.1.0.aar/9f9d8a58628625ef16b4eb090fd66069/AndroidManifest.xml:31:13-33:85
+	android:value
+		ADDED from [com.google.firebase:firebase-storage:16.1.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.1.0.aar/9f9d8a58628625ef16b4eb090fd66069/AndroidManifest.xml:33:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-storage:16.1.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.1.0.aar/9f9d8a58628625ef16b4eb090fd66069/AndroidManifest.xml:32:17-107
+activity#com.google.firebase.auth.internal.FederatedSignInActivity
+ADDED from [com.google.firebase:firebase-auth:16.2.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.2.1.aar/eed3bd48fbbf15d07b1638a9338fa410/AndroidManifest.xml:24:9-31:50
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:16.2.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.2.1.aar/eed3bd48fbbf15d07b1638a9338fa410/AndroidManifest.xml:26:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:16.2.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.2.1.aar/eed3bd48fbbf15d07b1638a9338fa410/AndroidManifest.xml:28:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:16.2.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.2.1.aar/eed3bd48fbbf15d07b1638a9338fa410/AndroidManifest.xml:27:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-auth:16.2.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.2.1.aar/eed3bd48fbbf15d07b1638a9338fa410/AndroidManifest.xml:29:13-102
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:16.2.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.2.1.aar/eed3bd48fbbf15d07b1638a9338fa410/AndroidManifest.xml:30:13-72
+	tools:replace
+		ADDED from [com.google.firebase:firebase-auth:16.2.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.2.1.aar/eed3bd48fbbf15d07b1638a9338fa410/AndroidManifest.xml:31:13-47
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:16.2.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.2.1.aar/eed3bd48fbbf15d07b1638a9338fa410/AndroidManifest.xml:25:13-85
+meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
+ADDED from [com.google.firebase:firebase-auth:16.2.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.2.1.aar/eed3bd48fbbf15d07b1638a9338fa410/AndroidManifest.xml:36:13-38:85
+	android:value
+		ADDED from [com.google.firebase:firebase-auth:16.2.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.2.1.aar/eed3bd48fbbf15d07b1638a9338fa410/AndroidManifest.xml:38:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:16.2.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.2.1.aar/eed3bd48fbbf15d07b1638a9338fa410/AndroidManifest.xml:37:17-109
+meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
+ADDED from [com.google.firebase:firebase-firestore:18.2.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-firestore-18.2.0.aar/6c846c3af8cde8317c9a2f4205447c6e/AndroidManifest.xml:18:13-20:85
+	android:value
+		ADDED from [com.google.firebase:firebase-firestore:18.2.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-firestore-18.2.0.aar/6c846c3af8cde8317c9a2f4205447c6e/AndroidManifest.xml:20:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-firestore:18.2.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-firestore-18.2.0.aar/6c846c3af8cde8317c9a2f4205447c6e/AndroidManifest.xml:19:17-111
 uses-permission#android.permission.WAKE_LOCK
 ADDED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.4.0.aar/eb8ebc5c8fca09926c85cb168597b024/AndroidManifest.xml:24:5-68
 MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/78c1e26762a943665d2801a7bd92b4f8/AndroidManifest.xml:24:5-68
@@ -367,14 +454,6 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] /U
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-measurement-sdk-api-16.4.0.aar/ebd5f3a680a95c264b8ca510189407a5/AndroidManifest.xml:25:5-68
 	android:name
 		ADDED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.4.0.aar/eb8ebc5c8fca09926c85cb168597b024/AndroidManifest.xml:24:22-65
-service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.4.0.aar/eb8ebc5c8fca09926c85cb168597b024/AndroidManifest.xml:27:9-33:19
-MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/78c1e26762a943665d2801a7bd92b4f8/AndroidManifest.xml:29:9-35:19
-MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/78c1e26762a943665d2801a7bd92b4f8/AndroidManifest.xml:29:9-35:19
-	android:exported
-		ADDED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.4.0.aar/eb8ebc5c8fca09926c85cb168597b024/AndroidManifest.xml:29:13-37
-	android:name
-		ADDED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.4.0.aar/eb8ebc5c8fca09926c85cb168597b024/AndroidManifest.xml:28:13-84
 meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
 ADDED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.4.0.aar/eb8ebc5c8fca09926c85cb168597b024/AndroidManifest.xml:30:13-32:85
 	android:value
@@ -428,15 +507,15 @@ ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/gl-zarqa-im
 	android:name
 		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/4c7340cebdf88a3bfad7636af3f6f702/AndroidManifest.xml:24:13-79
 provider#com.google.firebase.provider.FirebaseInitProvider
-ADDED from [com.google.firebase:firebase-common:16.0.3] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/9b975cc40810d77283d91169a2528cff/AndroidManifest.xml:10:9-14:39
+ADDED from [com.google.firebase:firebase-common:16.1.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-common-16.1.0.aar/01eef251db8ba4740248312beb3f9cad/AndroidManifest.xml:12:9-16:39
 	android:authorities
-		ADDED from [com.google.firebase:firebase-common:16.0.3] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/9b975cc40810d77283d91169a2528cff/AndroidManifest.xml:12:13-72
+		ADDED from [com.google.firebase:firebase-common:16.1.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-common-16.1.0.aar/01eef251db8ba4740248312beb3f9cad/AndroidManifest.xml:14:13-72
 	android:exported
-		ADDED from [com.google.firebase:firebase-common:16.0.3] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/9b975cc40810d77283d91169a2528cff/AndroidManifest.xml:13:13-37
+		ADDED from [com.google.firebase:firebase-common:16.1.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-common-16.1.0.aar/01eef251db8ba4740248312beb3f9cad/AndroidManifest.xml:15:13-37
 	android:initOrder
-		ADDED from [com.google.firebase:firebase-common:16.0.3] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/9b975cc40810d77283d91169a2528cff/AndroidManifest.xml:14:13-36
+		ADDED from [com.google.firebase:firebase-common:16.1.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-common-16.1.0.aar/01eef251db8ba4740248312beb3f9cad/AndroidManifest.xml:16:13-36
 	android:name
-		ADDED from [com.google.firebase:firebase-common:16.0.3] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/9b975cc40810d77283d91169a2528cff/AndroidManifest.xml:11:13-77
+		ADDED from [com.google.firebase:firebase-common:16.1.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/firebase-common-16.1.0.aar/01eef251db8ba4740248312beb3f9cad/AndroidManifest.xml:13:13-77
 uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
 ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/88a0a7e7326894ff40194b72987fad8b/AndroidManifest.xml:26:5-110
 MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] /Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-measurement-impl-16.4.0.aar/caca7db94e97ea2218b5f5c21207a7fc/AndroidManifest.xml:26:5-110

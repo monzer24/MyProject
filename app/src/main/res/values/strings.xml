@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Check</string>
+
+    <string-array name="banks">
+        <item>Please Choose your bank .. </item>
+        <item>Jordan Islamic Bank</item>
+        <item>Arab Bank</item>
+        <item>Bank Of Jordan</item>
+        <item>Cairo Amman Bank</item>
+        <item>Jordan Kuwait Bank</item>
+        <item>Jordan Ahli Bank</item>
+        <item>Bank al Etihad</item>
+    </string-array>
+
 </resources>

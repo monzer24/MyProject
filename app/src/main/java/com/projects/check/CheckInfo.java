@@ -1,9 +1,13 @@
 package com.projects.check;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.DatePickerDialog;
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -22,7 +26,11 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+
+import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -37,8 +45,9 @@ public class CheckInfo extends Activity {
     EditText date;
     DatePickerDialog picker;
     Button submit;
-    public static byte[] bytes;
     private Check check;
+
+    FirebaseConnection connect;
     
     private View.OnClickListener datePickerListener = new View.OnClickListener() {
         @Override
@@ -62,7 +71,6 @@ public class CheckInfo extends Activity {
         // Upload the taken photo to storage firebase;
         @Override
         public void onClick(View v) {
-            Toast.makeText(CheckInfo.this, "Please wait, the data is being uploaded", Toast.LENGTH_LONG);
             check = new Check();
             check.setBankBranch(branch.getText().toString());
             check.setRecipientName(name.getText().toString());
@@ -70,10 +78,35 @@ public class CheckInfo extends Activity {
                     Integer.valueOf(jodAmount.getText().toString()));
             check.setCheckDate(date.getText().toString());
 
-           uploadImage();
+            Bitmap bit = ((BitmapDrawable)capturedImage.getDrawable()).getBitmap();
+            ByteArrayOutputStream stream = new ByteArrayOutputStream();
+            bit.compress(Bitmap.CompressFormat.PNG, 100, stream);
+            byte[] bytes = stream.toByteArray();
+
+           upload(bytes);
 
         }
     };
+
+    private void upload(byte[] bytes) {
+        String url = connect.uploadImage(bytes);
+        if(url != null){
+            docID = addCheck(url);
+            if(docID != null){
+                Toast.makeText(this, "Check has been uploaded successfully with the ID :" + docID, Toast.LENGTH_LONG).show();
+            }else{
+               AlertDialog d = new AlertDialog.Builder(this)
+                       .setTitle("Failed")
+                       .setMessage("Image has been uploaded successfully, but there is error with the check info. Please check out the info")
+                       .setPositiveButton("OK", null)
+                       .setIcon(R.drawable.x)
+                       .show();
+                Toast.makeText(this, "Check Image uploaded successfully but not the check info, Please make sure ", Toast.LENGTH_LONG).show();
+            }
+        }else{
+            Toast.makeText(this,  "Could not upload the Image, Please check out your connection", Toast.LENGTH_LONG).show();
+        }
+    }
 
 
     @Override
@@ -81,7 +114,10 @@ public class CheckInfo extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.check_info);
 
-        Bitmap bmp = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
+        String filePath=getIntent().getStringExtra("path");
+        File file = new File(filePath);
+        Bitmap bmp = BitmapFactory.decodeFile(file.getAbsolutePath());
+
         capturedImage = findViewById(R.id.submited);
         capturedImage.setImageBitmap(bmp);
 
@@ -92,42 +128,15 @@ public class CheckInfo extends Activity {
         date = findViewById(R.id.date);
         submit = findViewById(R.id.submit);
 
+        connect = new FirebaseConnection();
+        connect.initConnection();
+
         date.setOnClickListener(this.datePickerListener);
         submit.setOnClickListener(this.submitListener);
 
     }
-    
-    
-    private void uploadImage() {
-        StorageReference storageRef = FirebaseStorage.getInstance().getReference();
-        final StorageReference ref = storageRef.child("images/check.jpg");
-        UploadTask uploadTask = ref.putBytes(bytes); // start uploading
 
-        Task<Uri> urlTask = uploadTask.continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
-            @Override
-            public Task<Uri> then(@NonNull Task<UploadTask.TaskSnapshot> task) throws Exception {
-                if (!task.isSuccessful()) {
-                    throw task.getException();
-                }
-
-                // Continue with the task to get the download URL
-                return ref.getDownloadUrl();
-            }
-        }).addOnCompleteListener(new OnCompleteListener<Uri>() {
-            @Override
-            public void onComplete(@NonNull Task<Uri> task) {
-                if (task.isSuccessful()) {
-                    addCheck(task.getResult().toString());
-                } else {
-                    Toast.makeText(CheckInfo.this, "Failed to upload the captured image, Please check out your internet connection", Toast.LENGTH_SHORT);
-                }
-            }
-        });
-    }
-
-    private void addCheck(String path){
-
-        FirebaseFirestore store = FirebaseFirestore.getInstance();
+    private String addCheck(String path){
         Map<String, Object> checkInfo = new HashMap<>();
         checkInfo.put("branch", check.getBankBranch());
         checkInfo.put("name", check.getRecipientName());
@@ -135,15 +144,7 @@ public class CheckInfo extends Activity {
         checkInfo.put("date", check.getCheckDate());
         checkInfo.put("picture", path);
 
-        System.out.println(checkInfo);
-        store.collection("Checks").add(checkInfo).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
-            @Override
-            public void onSuccess(DocumentReference documentReference) {
-                docID = documentReference.getId();
-                System.out.println(docID);
-            }
-        });
-        
+        return connect.addCheck(path, checkInfo);
     }
 
 }

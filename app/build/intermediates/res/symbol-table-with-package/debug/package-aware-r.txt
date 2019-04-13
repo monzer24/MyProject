@@ -11,6 +11,7 @@ anim abc_slide_out_bottom
 anim abc_slide_out_top
 anim abc_tooltip_enter
 anim abc_tooltip_exit
+array banks
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -646,6 +647,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable check
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -682,6 +684,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable rounded
 drawable submit
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -692,6 +695,7 @@ id FUNCTION
 id META
 id SHIFT
 id SYM
+id account
 id action0
 id action_bar
 id action_bar_activity_content
@@ -722,6 +726,8 @@ id amount_fils
 id amount_jod
 id async
 id auto
+id bank
+id bank_no
 id barrier
 id beginning
 id blocking
@@ -761,6 +767,7 @@ id fill
 id fill_horizontal
 id fill_vertical
 id forever
+id fullname
 id gone
 id group_divider
 id groups
@@ -771,6 +778,7 @@ id icon_group
 id icon_only
 id ifRoom
 id image
+id imageView
 id info
 id invisible
 id italic
@@ -779,8 +787,10 @@ id light
 id line1
 id line3
 id linearLayout
+id linearLayout2
 id listMode
 id list_item
+id login
 id main
 id media_actions
 id message
@@ -797,7 +807,9 @@ id notification_main_column_container
 id packed
 id parent
 id parentPanel
+id password
 id percent
+id phone
 id progress_circular
 id progress_horizontal
 id radio
@@ -823,6 +835,7 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
+id sign_up
 id spacer
 id split_action_bar
 id spread
@@ -845,6 +858,7 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
+id textView
 id texture
 id time
 id title
@@ -897,6 +911,7 @@ layout abc_tooltip
 layout activity_main
 layout captured
 layout check_info
+layout login
 layout notification_action
 layout notification_action_tombstone
 layout notification_media_action
@@ -915,6 +930,7 @@ layout notification_template_part_time
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
+layout sign_up
 layout support_simple_spinner_dropdown_item
 mipmap ic_launcher
 mipmap ic_launcher_round

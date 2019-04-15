@@ -6,11 +6,11 @@ import java.util.Map;
 
 public interface Connection<K, V> {
 
-    String uploadImage(byte[] bytes);
+    void uploadImage(byte[] bytes);
 
     String addCheck(String imageURL, Map<K, V> info);
 
-    boolean logIn(String bankNo, String password);
+    User logIn(User user);
 
     boolean signUp(User user);
 

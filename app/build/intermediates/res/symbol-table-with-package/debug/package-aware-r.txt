@@ -835,6 +835,7 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
+id signUp
 id sign_up
 id spacer
 id split_action_bar

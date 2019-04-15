@@ -88,12 +88,20 @@ public class CheckInfo extends Activity {
         }
     };
 
-    private void upload(byte[] bytes) {
-        String url = connect.uploadImage(bytes);
+    private boolean upload(byte[] bytes) {
+        connect.uploadImage(bytes);
+        String url = FirebaseConnection.imageURL();
+                System.out.println(url + " there");
         if(url != null){
             docID = addCheck(url);
             if(docID != null){
-                Toast.makeText(this, "Check has been uploaded successfully with the ID :" + docID, Toast.LENGTH_LONG).show();
+                AlertDialog d = new AlertDialog.Builder(this)
+                        .setTitle("Failed")
+                        .setMessage("Image has been uploaded successfully, but there is error with the check info. Please check out the info")
+                        .setPositiveButton("OK", null)
+                        .setIcon(R.drawable.common_google_signin_btn_icon_disabled)
+                        .show();
+                return true;
             }else{
                AlertDialog d = new AlertDialog.Builder(this)
                        .setTitle("Failed")
@@ -102,9 +110,17 @@ public class CheckInfo extends Activity {
                        .setIcon(R.drawable.x)
                        .show();
                 Toast.makeText(this, "Check Image uploaded successfully but not the check info, Please make sure ", Toast.LENGTH_LONG).show();
+                return false;
             }
         }else{
-            Toast.makeText(this,  "Could not upload the Image, Please check out your connection", Toast.LENGTH_LONG).show();
+//            Toast.makeText(this,  "Could not upload the Image, Please check out your connection", Toast.LENGTH_LONG).show();
+            AlertDialog d = new AlertDialog.Builder(this)
+                    .setTitle("Failed")
+                    .setMessage("Image has been uploaded successfully, but there is error with the check info. Please check out the info")
+                    .setPositiveButton("OK", null)
+                    .setIcon(R.drawable.common_google_signin_btn_icon_dark_focused)
+                    .show();
+            return false;
         }
     }
 

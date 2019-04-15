@@ -31,7 +31,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.projects.check.MainActivity" >
+        <activity android:name="com.projects.check.LogInActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -39,6 +39,8 @@
             </intent-filter>
         </activity>
         <activity android:name="com.projects.check.CapturedImage" />
+        <activity android:name="com.projects.check.MainActivity" />
+        <activity android:name="com.projects.check.SignUpActivity" />
         <activity android:name="com.projects.check.CheckInfo" />
 
         <meta-data

@@ -2,6 +2,7 @@ package com.projects.check;
 
 public class Check {
 
+    private String checkId;
     private String bankBranch;
     private String recipientName;
     private String amount;
@@ -40,5 +41,13 @@ public class Check {
 
     public void setCheckDate(String checkDate) {
         this.checkDate = checkDate;
+    }
+
+    public String getCheckId() {
+        return checkId;
+    }
+
+    public void setCheckId(String checkId) {
+        this.checkId = checkId;
     }
 }

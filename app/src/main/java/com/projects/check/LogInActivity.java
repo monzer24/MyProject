@@ -31,7 +31,7 @@ public class LogInActivity extends Activity {
         connection = new FirebaseConnection(this);
         connection.initConnection();
 
-        logIn.setOnClickListener(this.login(bankNo.getText().toString(), password.getText().toString()));
+        logIn.setOnClickListener(this.login());
         signUp.setOnClickListener(this.toSignUp());
 
     }
@@ -45,28 +45,23 @@ public class LogInActivity extends Activity {
         };
     }
 
-    View.OnClickListener login(String bankNo, String password){
-        User user = new User();
-        if(bankNo != null && password != null) {
-            user.setBankAccountNumber(bankNo);
-            user.setPassword(password);
-        }else{
+    View.OnClickListener login() {
+        if (bankNo.getText() == null && password.getText() == null) {
+            System.out.println("NULL");
             Toast.makeText(LogInActivity.this, "Account number or password fields can not be empty, Please fill them and try again", Toast.LENGTH_SHORT).show();
             return null;
-        }
-        return new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(connection.logIn(user).getFullName() != null){
-                    Toast.makeText(LogInActivity.this, "Welcome Mr. " + user.getFullName(), Toast.LENGTH_SHORT).show();
-                    Intent in = new Intent(LogInActivity.this, ChooseingAction.class);
-                    in.putExtra("user", (Serializable) user);
-                    startActivity(in);
-                }else{
-                    Toast.makeText(LogInActivity.this, "Wrong account number or password, please check them out and try again", Toast.LENGTH_SHORT).show();
+        } else {
+            return new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    User user = new User();
+                    System.out.println("Data : " + bankNo.getText().toString() + " " + password.getText().toString());
+                    user.setBankAccountNumber(bankNo.getText().toString());
+                    user.setPassword(password.getText().toString());
+                    connection.logIn(user);
                 }
-            }
 
-        };
+            };
+        }
     }
 }

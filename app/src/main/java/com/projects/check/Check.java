@@ -1,6 +1,8 @@
 package com.projects.check;
 
-public class Check {
+import java.io.Serializable;
+
+public class Check implements Serializable {
 
     private String checkId;
     private String senderName;

@@ -35,8 +35,17 @@
             android:orientation="vertical"
             android:layout_margin="8dp">
 
+            <TextView
+                android:id="@+id/sender"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/rounded"
+                android:layout_margin="4dp"
+                android:textAlignment="center"
+                />
+
             <Spinner
-                android:id="@+id/branch"
+                android:id="@+id/bank_branch"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_margin="4dp"

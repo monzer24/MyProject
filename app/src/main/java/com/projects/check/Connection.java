@@ -14,6 +14,6 @@ public interface Connection<K, V> {
 
     boolean signUp(User user);
 
-    Check retrieveCheck(String id);
+    void retrieveCheck(String id, User user);
 
 }

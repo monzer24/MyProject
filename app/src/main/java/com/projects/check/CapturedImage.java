@@ -20,11 +20,14 @@ public class CapturedImage extends Activity {
     ImageView captured;
     ImageView dismiss;
     ImageView next;
+    private User user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.captured);
+
+        user = (User) getIntent().getSerializableExtra("user");
 
         String filePath=getIntent().getStringExtra("path");
         File file = new File(filePath);
@@ -45,6 +48,7 @@ public class CapturedImage extends Activity {
         @Override
         public void onClick(View v) {
             Intent back = new Intent(CapturedImage.this, MainActivity.class);
+            back.putExtra("user", user);
             startActivity(back);
         }
     };
@@ -56,6 +60,7 @@ public class CapturedImage extends Activity {
             String filePath= tempFileImage(CapturedImage.this,map,"image");
             Intent intent = new Intent(CapturedImage.this, CheckInfo.class);
             intent.putExtra("path", filePath);
+            intent.putExtra("user", user);
             startActivity(intent);
         }
     };

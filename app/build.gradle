@@ -37,5 +37,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth:16.2.1'
     implementation 'com.google.firebase:firebase-firestore:18.2.0'
     implementation 'org.jetbrains:annotations:15.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
 }
 apply plugin: 'com.google.gms.google-services'

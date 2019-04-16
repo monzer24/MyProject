@@ -9,7 +9,6 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
         >
 
         <LinearLayout
@@ -18,67 +17,92 @@
             android:orientation="vertical"
             android:layout_margin="8dp">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/checkid"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/rounded"
+                    android:hint="Search for Check"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:textAlignment="center" />
+
+                <ImageView
+                    android:id="@+id/search"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/search"/>
+
+            </LinearLayout>
+
             <ImageView
+                android:id="@+id/retrieved_image"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/retrieved_image"
                 android:src="@drawable/check"
-                />
+                android:visibility="gone" />
 
             <TextView
                 android:id="@+id/sender_name"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:layout_margin="8dp"
                 android:background="@drawable/rounded"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-           />
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:visibility="gone" />
 
             <TextView
                 android:id="@+id/recipient_name"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:layout_margin="8dp"
                 android:background="@drawable/rounded"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                />
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:visibility="gone" />
 
             <TextView
                 android:id="@+id/check_amount"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:layout_margin="8dp"
                 android:background="@drawable/rounded"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                />
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:visibility="gone" />
 
             <TextView
                 android:id="@+id/check_branch"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:layout_margin="8dp"
                 android:background="@drawable/rounded"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                />
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:visibility="gone" />
 
             <TextView
                 android:id="@+id/check_date"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:layout_margin="8dp"
                 android:background="@drawable/rounded"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                />
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:visibility="gone" />
 
             <Button
                 android:id="@+id/cash"
                 android:layout_width="250dp"
                 android:layout_height="40dp"
+                android:layout_gravity="center"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="28dp"
                 android:layout_marginEnd="8dp"
@@ -87,7 +111,7 @@
                 android:text="Cash the Check"
                 android:textAlignment="center"
                 android:textColor="#fff"
-                android:layout_gravity="center"
+                android:visibility="gone"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.496"
                 app:layout_constraintStart_toStartOf="parent"

@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ImageView btnCapture;
     private TextureView textureView;
+    private User user;
 
     //Check state orientation of output image
     private static final SparseIntArray ORIENTATIONS = new SparseIntArray();
@@ -105,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        user = (User) getIntent().getSerializableExtra("user");
         textureView = findViewById(R.id.texture);
         //From Java 1.4 , you can use keyword 'assert' to check expression true or false
         assert textureView != null;
@@ -184,6 +185,7 @@ public class MainActivity extends AppCompatActivity {
                     String filePath= tempFileImage(MainActivity.this,map,"image");
                     Intent intent = new Intent(MainActivity.this, CapturedImage.class);
                     intent.putExtra("path", filePath);
+                    intent.putExtra("user", user);
                     startActivity(intent);
                 }
             };

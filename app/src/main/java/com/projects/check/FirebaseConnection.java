@@ -8,7 +8,6 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
-import android.os.Parcelable;
 import android.support.annotation.NonNull;
 import android.widget.Toast;
 
@@ -26,14 +25,10 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
-import java.nio.charset.Charset;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Random;
 import java.util.UUID;
-
-import okio.Utf8;
 
 public class FirebaseConnection implements Connection<String, Object> {
 
@@ -101,7 +96,7 @@ public class FirebaseConnection implements Connection<String, Object> {
                                     clip.setPrimaryClip(data);
                                     System.out.println(docId);
                                     Toast.makeText(context, docId + "has been Copied to clip board", Toast.LENGTH_SHORT).show();
-//                                    (context).startActivity(new Intent(context, ChooseingAction.class));
+//                                    (context).startActivity(new Intent(context, ChoosingAction.class));
                                 }
                             }).show();
                 }
@@ -112,8 +107,8 @@ public class FirebaseConnection implements Connection<String, Object> {
                             .setIcon(R.drawable.x)
                             .setTitle("Failed !")
                             .setMessage("A failure happened and the check has not been uploaded")
-                            .setNegativeButton("cancel", null)
-                            .setPositiveButton("Copy", new DialogInterface.OnClickListener() {
+                            .setNegativeButton("Cancel", null)
+                            .setPositiveButton("Retry", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
                                     addCheck(url, info);
@@ -130,20 +125,20 @@ public class FirebaseConnection implements Connection<String, Object> {
 
     @Override
     public void logIn(User user) {
-        Query que = store.collection("Users").whereEqualTo(user.getBankAccountNumber(), "bankNo");
+        Query que = store.collection("Users").whereEqualTo("bankNo", user.getBankAccountNumber());
         que.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
             @Override
             public void onComplete(@NonNull Task<QuerySnapshot> task) {
-                if(task != null){
+                System.out.println("here");
+                if(task != null && task.getResult().size() != 0){
                     for(DocumentSnapshot doc : task.getResult().getDocuments()){
                         System.out.println(doc.getString("bankNo"));
                         if(user.getBankAccountNumber().equals(doc.get("bankNo")) && user.getPassword().equals(doc.get("password"))){
-                            Toast.makeText(context, "Loged in Successfully", Toast.LENGTH_SHORT).show();
                             user.setFullName(doc.getString("fullName"));
                             user.setPhoneNumber(doc.getString("phoneNumber"));
                             user.setBankBranch(doc.getString("bankBranch"));
-                            Intent in = new Intent(context, ChooseingAction.class);
-                            in.putExtra("user", (Parcelable) user);
+                            Intent in = new Intent(context, ChoosingAction.class);
+                            in.putExtra("user", user);
                             context.startActivity(in);
                         }else{
                             Dialog d = new AlertDialog.Builder(context)
@@ -154,7 +149,8 @@ public class FirebaseConnection implements Connection<String, Object> {
                                     .show();
                         }
                     }
-                }else {
+                }else{
+                    System.out.println("elsing");
                     Dialog d = new AlertDialog.Builder(context)
                             .setIcon(R.drawable.check)
                             .setTitle("Login Failed")
@@ -162,6 +158,16 @@ public class FirebaseConnection implements Connection<String, Object> {
                             .setPositiveButton("close", null)
                             .show();
                 }
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Dialog d = new AlertDialog.Builder(context)
+                        .setIcon(R.drawable.check)
+                        .setTitle("Login Failed")
+                        .setMessage("User with Bank Account Number " + user.getBankAccountNumber() + " is not exist")
+                        .setPositiveButton("close", null)
+                        .show();
             }
         });
     }
@@ -189,18 +195,23 @@ public class FirebaseConnection implements Connection<String, Object> {
     }
 
     @Override
-    public Check retrieveCheck(String id){
-        final Check check = new Check();
+    public void retrieveCheck(String id, User user){
         store.collection("Checks").document(id).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
             public void onSuccess(DocumentSnapshot doc) {
-                check.setSenderName(doc.getString("senderName"));
-                check.setRecipientName(doc.getString("recipientName"));
-                check.setAmount(doc.getString("amount"));
-                check.setBankBranch(doc.getString("bankBranch"));
-                check.setCheckImage(doc.getString("picture"));
+                if(user.getFullName().equals(doc.getString("recipientName"))) {
+                    Check check = new Check();
+                    check.setSenderName(doc.getString("senderName"));
+                    check.setRecipientName(doc.getString("recipientName"));
+                    check.setAmount(doc.getString("amount"));
+                    check.setBankBranch(doc.getString("bankBranch"));
+                    check.setCheckImage(doc.getString("picture"));
+                    check.setCheckDate(doc.getString("date"));
+                    Intent in = new Intent(context, RetrieveCheck.class);
+                    in.putExtra("check", check);
+                    context.startActivity(in);
+                }
             }
         });
-        return check;
     }
 }

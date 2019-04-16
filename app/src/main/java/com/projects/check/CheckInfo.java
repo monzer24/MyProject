@@ -16,6 +16,8 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 import com.google.android.gms.tasks.Continuation;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -37,15 +39,18 @@ import java.util.Map;
 public class CheckInfo extends Activity {
     String docID = "";
 
+    TextView senderName;
     ImageView capturedImage;
-    EditText branch;
+    Spinner branch;
     EditText name;
     EditText jodAmount;
     EditText filsAmount;
     EditText date;
     DatePickerDialog picker;
     Button submit;
-    FirebaseConnection connect;
+
+    private FirebaseConnection connect;
+    private User user;
     
     private View.OnClickListener datePickerListener = new View.OnClickListener() {
         @Override
@@ -70,7 +75,7 @@ public class CheckInfo extends Activity {
         @Override
         public void onClick(View v) {
             Check check = new Check();
-            check.setBankBranch(branch.getText().toString());
+            check.setBankBranch(branch.getSelectedItem().toString());
             check.setRecipientName(name.getText().toString());
             check.setAmount(jodAmount.getText().toString(), filsAmount.getText().toString());
             check.setCheckDate(date.getText().toString());
@@ -88,10 +93,11 @@ public class CheckInfo extends Activity {
     private void upload(byte[] bytes, Check info) {
 
         Map<String, Object> checkInfo = new HashMap<>();
-        checkInfo.put("branch", info.getBankBranch());
-        checkInfo.put("name", info.getRecipientName());
+        checkInfo.put("bankBranch", info.getBankBranch());
+        checkInfo.put("recipientName", info.getRecipientName());
         checkInfo.put("amount", info.getAmount());
         checkInfo.put("date", info.getCheckDate());
+        checkInfo.put("senderName", user.getFullName());
 
         connect.uploadImage(bytes, checkInfo);
     }
@@ -102,14 +108,17 @@ public class CheckInfo extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.check_info);
 
+        user = (User) getIntent().getSerializableExtra("user");
+
         String filePath=getIntent().getStringExtra("path");
         File file = new File(filePath);
         Bitmap bmp = BitmapFactory.decodeFile(file.getAbsolutePath());
 
         capturedImage = findViewById(R.id.submited);
         capturedImage.setImageBitmap(bmp);
-
-        branch = findViewById(R.id.branch);
+        senderName = findViewById(R.id.sender);
+        senderName.setText(user.getFullName());
+        branch = findViewById(R.id.bank_branch);
         name = findViewById(R.id.name);
         jodAmount = findViewById(R.id.amount_jod);
         filsAmount= findViewById(R.id.amount_fils);

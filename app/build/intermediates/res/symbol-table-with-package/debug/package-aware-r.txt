@@ -685,6 +685,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable rounded
+drawable search
 drawable submit
 drawable take
 drawable tooltip_frame_dark
@@ -728,12 +729,12 @@ id amount_jod
 id async
 id auto
 id bank
+id bank_branch
 id bank_no
 id barrier
 id beginning
 id blocking
 id bottom
-id branch
 id buttonPanel
 id cancel_action
 id capture
@@ -749,6 +750,7 @@ id check_amount
 id check_branch
 id check_date
 id checkbox
+id checkid
 id chronometer
 id clip_horizontal
 id clip_vertical
@@ -828,6 +830,7 @@ id screen
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
+id search
 id search_badge
 id search_bar
 id search_button
@@ -840,6 +843,7 @@ id search_src_text
 id search_voice_btn
 id select_dialog_listview
 id send
+id sender
 id sender_name
 id shortcut
 id showCustom

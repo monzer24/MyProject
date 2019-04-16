@@ -92,7 +92,7 @@ public class FirebaseConnection implements Connection<String, Object> {
                             .setIcon(R.drawable.check)
                             .setTitle("Successful !")
                             .setMessage("Check ID : " + docId + " Copy it and send it to the recipient")
-                            .setNeutralButton("Copy", new DialogInterface.OnClickListener() {
+                            .setPositiveButton("Copy", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
                                     ClipboardManager clip = (ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
@@ -100,7 +100,6 @@ public class FirebaseConnection implements Connection<String, Object> {
                                     clip.setPrimaryClip(data);
                                     System.out.println(docId);
                                     Toast.makeText(context, docId + "has been Copied to clip board", Toast.LENGTH_SHORT);
-                                    System.out.println(context);
 //                                    (context).startActivity(new Intent(context, ChooseingAction.class));
                                 }
                             }).show();

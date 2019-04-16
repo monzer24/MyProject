@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#26394A"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/check"
+        android:layout_width="259dp"
+        android:layout_height="215dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/check"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="Welcome User"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded"
+        android:backgroundTint="#EE6A55"
+        android:text="Send Check"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_marginTop="50dp"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        />
+
+    <Button
+        android:id="@+id/receive"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded"
+        android:backgroundTint="#F2BF49"
+        android:text="Receive Check"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_marginTop="12dp"
+        android:textAlignment="center"
+        android:textColor="#fff"/>
+
+</LinearLayout>

@@ -37,6 +37,7 @@ import android.view.Surface;
 import android.view.TextureView;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.io.BufferedInputStream;
@@ -54,7 +55,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btnCapture;
+    private ImageView btnCapture;
     private TextureView textureView;
 
     //Check state orientation of output image

@@ -667,11 +667,11 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
+drawable confirm
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_launcher_background
 drawable ic_launcher_foreground
-drawable next
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -686,6 +686,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable rounded
 drawable submit
+drawable take
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable x
@@ -743,6 +744,7 @@ id center
 id center_horizontal
 id center_vertical
 id chains
+id check
 id check_amount
 id check_branch
 id check_date
@@ -790,7 +792,6 @@ id left
 id light
 id line1
 id line3
-id linearLayout
 id linearLayout2
 id listMode
 id list_item
@@ -817,6 +818,7 @@ id phone
 id progress_circular
 id progress_horizontal
 id radio
+id receive
 id recipient_name
 id retrieved_image
 id right
@@ -837,6 +839,7 @@ id search_plate
 id search_src_text
 id search_voice_btn
 id select_dialog_listview
+id send
 id sender_name
 id shortcut
 id showCustom
@@ -919,6 +922,7 @@ layout abc_tooltip
 layout activity_main
 layout captured
 layout check_info
+layout choose
 layout login
 layout notification_action
 layout notification_action_tombstone

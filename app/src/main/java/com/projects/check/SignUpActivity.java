@@ -33,7 +33,7 @@ public class SignUpActivity extends Activity {
         accountNumber = findViewById(R.id.account);
         signup = findViewById(R.id.signUp);
 
-        connection = new FirebaseConnection();
+        connection = new FirebaseConnection(this);
         connection.initConnection();
 
         signup.setOnClickListener(this.signUp());

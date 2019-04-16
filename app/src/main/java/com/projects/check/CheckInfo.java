@@ -45,8 +45,6 @@ public class CheckInfo extends Activity {
     EditText date;
     DatePickerDialog picker;
     Button submit;
-    private Check check;
-
     FirebaseConnection connect;
     
     private View.OnClickListener datePickerListener = new View.OnClickListener() {
@@ -71,11 +69,10 @@ public class CheckInfo extends Activity {
         // Upload the taken photo to storage firebase;
         @Override
         public void onClick(View v) {
-            check = new Check();
+            Check check = new Check();
             check.setBankBranch(branch.getText().toString());
             check.setRecipientName(name.getText().toString());
-            check.setAmount(Integer.valueOf(jodAmount.getText().toString()),
-                    Integer.valueOf(jodAmount.getText().toString()));
+            check.setAmount(jodAmount.getText().toString(), filsAmount.getText().toString());
             check.setCheckDate(date.getText().toString());
 
             Bitmap bit = ((BitmapDrawable)capturedImage.getDrawable()).getBitmap();
@@ -83,45 +80,20 @@ public class CheckInfo extends Activity {
             bit.compress(Bitmap.CompressFormat.PNG, 100, stream);
             byte[] bytes = stream.toByteArray();
 
-           upload(bytes);
+           upload(bytes, check);
 
         }
     };
 
-    private boolean upload(byte[] bytes) {
-        connect.uploadImage(bytes);
-        String url = FirebaseConnection.imageURL();
-                System.out.println(url + " there");
-        if(url != null){
-            docID = addCheck(url);
-            if(docID != null){
-                AlertDialog d = new AlertDialog.Builder(this)
-                        .setTitle("Failed")
-                        .setMessage("Image has been uploaded successfully, but there is error with the check info. Please check out the info")
-                        .setPositiveButton("OK", null)
-                        .setIcon(R.drawable.common_google_signin_btn_icon_disabled)
-                        .show();
-                return true;
-            }else{
-               AlertDialog d = new AlertDialog.Builder(this)
-                       .setTitle("Failed")
-                       .setMessage("Image has been uploaded successfully, but there is error with the check info. Please check out the info")
-                       .setPositiveButton("OK", null)
-                       .setIcon(R.drawable.x)
-                       .show();
-                Toast.makeText(this, "Check Image uploaded successfully but not the check info, Please make sure ", Toast.LENGTH_LONG).show();
-                return false;
-            }
-        }else{
-//            Toast.makeText(this,  "Could not upload the Image, Please check out your connection", Toast.LENGTH_LONG).show();
-            AlertDialog d = new AlertDialog.Builder(this)
-                    .setTitle("Failed")
-                    .setMessage("Image has been uploaded successfully, but there is error with the check info. Please check out the info")
-                    .setPositiveButton("OK", null)
-                    .setIcon(R.drawable.common_google_signin_btn_icon_dark_focused)
-                    .show();
-            return false;
-        }
+    private void upload(byte[] bytes, Check info) {
+
+        Map<String, Object> checkInfo = new HashMap<>();
+        checkInfo.put("branch", info.getBankBranch());
+        checkInfo.put("name", info.getRecipientName());
+        checkInfo.put("amount", info.getAmount());
+        checkInfo.put("date", info.getCheckDate());
+
+        connect.uploadImage(bytes, checkInfo);
     }
 
 
@@ -144,23 +116,12 @@ public class CheckInfo extends Activity {
         date = findViewById(R.id.date);
         submit = findViewById(R.id.submit);
 
-        connect = new FirebaseConnection();
+        connect = new FirebaseConnection(this);
         connect.initConnection();
 
         date.setOnClickListener(this.datePickerListener);
         submit.setOnClickListener(this.submitListener);
 
-    }
-
-    private String addCheck(String path){
-        Map<String, Object> checkInfo = new HashMap<>();
-        checkInfo.put("branch", check.getBankBranch());
-        checkInfo.put("name", check.getRecipientName());
-        checkInfo.put("amount", check.getAmount());
-        checkInfo.put("date", check.getCheckDate());
-        checkInfo.put("picture", path);
-
-        return connect.addCheck(path, checkInfo);
     }
 
 }

@@ -30,7 +30,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.projects.check.LogInActivity" >
+        <activity android:name="com.projects.check.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -38,9 +38,10 @@
             </intent-filter>
         </activity>
         <activity android:name="com.projects.check.CapturedImage" />
-        <activity android:name="com.projects.check.MainActivity" />
+        <!-- <activity android:name=".MainActivity"/> -->
         <activity android:name="com.projects.check.SignUpActivity" />
         <activity android:name="com.projects.check.CheckInfo" />
+        <activity android:name="com.projects.check.ChooseingAction" />
 
         <meta-data
             android:name="com.google.android.gms.vision.DEPENDENCIES"

@@ -28,7 +28,7 @@ public class LogInActivity extends Activity {
         logIn = findViewById(R.id.login);
         signUp = findViewById(R.id.sign_up);
 
-        connection = new FirebaseConnection();
+        connection = new FirebaseConnection(this);
         connection.initConnection();
 
         logIn.setOnClickListener(this.login(bankNo.getText().toString(), password.getText().toString()));

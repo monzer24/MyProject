@@ -3,10 +3,29 @@ package com.projects.check;
 public class Check {
 
     private String checkId;
+    private String senderName;
+    private String checkImage;
     private String bankBranch;
     private String recipientName;
     private String amount;
     private String checkDate;
+
+
+    public String getSenderName() {
+        return senderName;
+    }
+
+    public void setSenderName(String senderName) {
+        this.senderName = senderName;
+    }
+
+    public String getCheckImage() {
+        return checkImage;
+    }
+
+    public void setCheckImage(String checkImage) {
+        this.checkImage = checkImage;
+    }
 
     public String getBankBranch() {
         return bankBranch;
@@ -28,11 +47,12 @@ public class Check {
         return amount;
     }
 
-    public void setAmount(int jod, int fils) {
-        float filsf = fils / 1000;
-        float amount = jod + filsf;
-        this.amount = String.valueOf(amount);
-        System.out.println(this.amount);
+    public void setAmount(String jod, String fils) {
+        this.amount = jod + "." + fils;
+    }
+
+    public void setAmount(String amount) {
+        this.amount = amount;
     }
 
     public String getCheckDate() {

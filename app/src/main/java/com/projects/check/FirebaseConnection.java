@@ -1,10 +1,19 @@
 package com.projects.check;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.ClipData;
+import android.content.ClipboardManager;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.net.Uri;
 import android.support.annotation.NonNull;
+import android.widget.Toast;
 
 import com.google.android.gms.tasks.Continuation;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.DocumentReference;
@@ -16,18 +25,26 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
+import java.nio.charset.Charset;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Random;
+import java.util.UUID;
+
+import okio.Utf8;
 
 public class FirebaseConnection implements Connection<String, Object> {
 
-    FirebaseFirestore store;
-    StorageReference storage;
-    static String res;
-    String docId;
-    String userName;
-    static boolean flag = true;
+    private FirebaseFirestore store;
+    private StorageReference storage;
+    Context context;
+    String res;
+
+    public FirebaseConnection(Context context) {
+        this.context = context;
+        System.out.println(this.context);
+    }
 
     public void initConnection(){
         store = FirebaseFirestore.getInstance();
@@ -35,8 +52,7 @@ public class FirebaseConnection implements Connection<String, Object> {
     }
 
     @Override
-    public void uploadImage(byte[] bytes) {
-        try {
+    public void uploadImage(byte[] bytes, Map<String, Object> info) {
             final StorageReference ref = storage.child("images/" + new Date().toString());
             UploadTask uploadTask = ref.putBytes(bytes); // start uploading
 
@@ -56,38 +72,56 @@ public class FirebaseConnection implements Connection<String, Object> {
                     System.out.println("finished");
                     if (task.isSuccessful()) {
                         res = task.getResult().toString();
-                        flag = false;
-                        System.out.println(flag + " " + res);
-
+                        addCheck(res, info);
                     }
                 }
             });
-
-        }catch (NullPointerException e){
-
-        }
-    }
-
-    public static String imageURL(){
-        while(flag){}
-        return res;
     }
 
     @Override
     public String addCheck(String url, Map<String ,Object> info) {
         info.put("picture", url);
         System.out.println(info);
+        String s = new UUID(2, 2).randomUUID().toString();
+        final String docId = s.substring(s.length() - 12, s.length()).toUpperCase();
         try {
-            store.collection("Checks").add(info).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+            store.collection("Checks").document(docId).set(info).addOnSuccessListener(new OnSuccessListener<Void>() {
                 @Override
-                public void onSuccess(DocumentReference documentReference) {
-                    docId = documentReference.getId();
-                    System.out.println(docId);
+                public void onSuccess(Void aVoid) {
+                    Dialog d = new AlertDialog.Builder(context)
+                            .setIcon(R.drawable.check)
+                            .setTitle("Successful !")
+                            .setMessage("Check ID : " + docId + " Copy it and send it to the recipient")
+                            .setNeutralButton("Copy", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    ClipboardManager clip = (ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
+                                    ClipData data = ClipData.newPlainText(docId, docId);
+                                    clip.setPrimaryClip(data);
+                                    System.out.println(docId);
+                                    Toast.makeText(context, docId + "has been Copied to clip board", Toast.LENGTH_SHORT);
+                                    System.out.println(context);
+//                                    (context).startActivity(new Intent(context, ChooseingAction.class));
+                                }
+                            }).show();
+                }
+            }).addOnFailureListener(new OnFailureListener() {
+                @Override
+                public void onFailure(@NonNull Exception e) {
+                    Dialog d = new AlertDialog.Builder(context)
+                            .setIcon(R.drawable.x)
+                            .setTitle("Failed !")
+                            .setMessage("A failure happened and the check has not been uploaded")
+                            .setNegativeButton("cancel", null)
+                            .setPositiveButton("Copy", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    addCheck(url, info);
+                                }
+                            }).show();
                 }
             });
-            while(docId == null);
             System.out.println("Doc ID : " + docId);
-
             return docId;
         }catch (NullPointerException e){
             return null;
@@ -133,5 +167,21 @@ public class FirebaseConnection implements Connection<String, Object> {
             }
         });
         return success[0];
+    }
+
+    @Override
+    public Check retrieveCheck(String id){
+        final Check check = new Check();
+        store.collection("Checks").document(id).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+            @Override
+            public void onSuccess(DocumentSnapshot doc) {
+                check.setSenderName(doc.getString("senderName"));
+                check.setRecipientName(doc.getString("recipientName"));
+                check.setAmount(doc.getString("amount"));
+                check.setBankBranch(doc.getString("bankBranch"));
+                check.setCheckImage(doc.getString("picture"));
+            }
+        });
+        return check;
     }
 }

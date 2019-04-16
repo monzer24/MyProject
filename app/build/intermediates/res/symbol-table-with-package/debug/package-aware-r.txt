@@ -738,10 +738,14 @@ id cancel_action
 id capture
 id captured
 id captured_image
+id cash
 id center
 id center_horizontal
 id center_vertical
 id chains
+id check_amount
+id check_branch
+id check_date
 id checkbox
 id chronometer
 id clip_horizontal
@@ -813,6 +817,8 @@ id phone
 id progress_circular
 id progress_horizontal
 id radio
+id recipient_name
+id retrieved_image
 id right
 id right_icon
 id right_side
@@ -831,6 +837,7 @@ id search_plate
 id search_src_text
 id search_voice_btn
 id select_dialog_listview
+id sender_name
 id shortcut
 id showCustom
 id showHome
@@ -928,6 +935,7 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout retrieved
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material

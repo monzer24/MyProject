@@ -1708,6 +1708,10 @@
         "source": "/Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/4c7340cebdf88a3bfad7636af3f6f702/res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
     },
     {
+        "merged": "/Users/gl-zarqa-imac-6/Desktop/MyProject/app/build/intermediates/res/merged/debug/layout_retrieved.xml.flat",
+        "source": "/Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/res/layout/retrieved.xml"
+    },
+    {
         "merged": "/Users/gl-zarqa-imac-6/Desktop/MyProject/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
         "source": "/Users/gl-zarqa-imac-6/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/4c7340cebdf88a3bfad7636af3f6f702/res/drawable-xxhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png"
     },

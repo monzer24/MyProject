@@ -53,12 +53,7 @@ public class SignUpActivity extends Activity {
                 user.setBankBranch(bankBranch.getSelectedItem().toString());
                 System.out.println("user is that :  " + user.getBankAccountNumber() + " " + user.getPassword() + " " + user.getFullName() + " " + user.getBankBranch() + "  " + user.getPhoneNumber());
                 boolean flag = connection.signUp(user);
-                System.out.println(flag);
-                if(flag){
-                    Toast.makeText(SignUpActivity.this, "User Registered Successfully", Toast.LENGTH_SHORT).show();
-                    Intent in = new Intent(SignUpActivity.this, LogInActivity.class);
-                    startActivity(in);
-                }
+
             }
         };
     }

@@ -10,7 +10,7 @@ public interface Connection<K, V> {
 
     String addCheck(String imageURL, Map<K, V> info);
 
-    User logIn(User user);
+    void logIn(User user);
 
     boolean signUp(User user);
 

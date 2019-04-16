@@ -8,6 +8,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Parcelable;
 import android.support.annotation.NonNull;
 import android.widget.Toast;
 
@@ -99,7 +100,7 @@ public class FirebaseConnection implements Connection<String, Object> {
                                     ClipData data = ClipData.newPlainText(docId, docId);
                                     clip.setPrimaryClip(data);
                                     System.out.println(docId);
-                                    Toast.makeText(context, docId + "has been Copied to clip board", Toast.LENGTH_SHORT);
+                                    Toast.makeText(context, docId + "has been Copied to clip board", Toast.LENGTH_SHORT).show();
 //                                    (context).startActivity(new Intent(context, ChooseingAction.class));
                                 }
                             }).show();
@@ -128,23 +129,41 @@ public class FirebaseConnection implements Connection<String, Object> {
     }
 
     @Override
-    public User logIn(User user) {
+    public void logIn(User user) {
         Query que = store.collection("Users").whereEqualTo(user.getBankAccountNumber(), "bankNo");
         que.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
             @Override
             public void onComplete(@NonNull Task<QuerySnapshot> task) {
                 if(task != null){
                     for(DocumentSnapshot doc : task.getResult().getDocuments()){
+                        System.out.println(doc.getString("bankNo"));
                         if(user.getBankAccountNumber().equals(doc.get("bankNo")) && user.getPassword().equals(doc.get("password"))){
+                            Toast.makeText(context, "Loged in Successfully", Toast.LENGTH_SHORT).show();
                             user.setFullName(doc.getString("fullName"));
                             user.setPhoneNumber(doc.getString("phoneNumber"));
                             user.setBankBranch(doc.getString("bankBranch"));
+                            Intent in = new Intent(context, ChooseingAction.class);
+                            in.putExtra("user", (Parcelable) user);
+                            context.startActivity(in);
+                        }else{
+                            Dialog d = new AlertDialog.Builder(context)
+                                    .setIcon(R.drawable.check)
+                                    .setTitle("Login Failed, ")
+                                    .setMessage("Wrong Banck Account Number or Password")
+                                    .setPositiveButton("Close", null)
+                                    .show();
                         }
                     }
+                }else {
+                    Dialog d = new AlertDialog.Builder(context)
+                            .setIcon(R.drawable.check)
+                            .setTitle("Login Failed")
+                            .setMessage("User with Bank Account Number " + user.getBankAccountNumber() + " is not exist")
+                            .setPositiveButton("close", null)
+                            .show();
                 }
             }
         });
-        return user.getFullName() != null ? user : null;
     }
 
     @Override
@@ -161,8 +180,9 @@ public class FirebaseConnection implements Connection<String, Object> {
         store.collection("Users").add(userMap).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
             @Override
             public void onSuccess(DocumentReference documentReference) {
-                success[0] = true;
-                System.out.println(success[0]);
+                Toast.makeText(context, "User Registered Successfully", Toast.LENGTH_SHORT).show();
+                Intent in = new Intent(context, LogInActivity.class);
+                context.startActivity(in);
             }
         });
         return success[0];

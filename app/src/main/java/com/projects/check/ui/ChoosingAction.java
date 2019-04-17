@@ -1,4 +1,4 @@
-package com.projects.check;
+package com.projects.check.ui;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,7 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
+import com.projects.check.R;
+import com.projects.check.model.User;
 
 public class ChoosingAction extends Activity {
 
@@ -24,10 +25,8 @@ public class ChoosingAction extends Activity {
         receive = findViewById(R.id.receive);
         name = findViewById(R.id.user);
         user = (User) getIntent().getSerializableExtra("user");
-        Toast.makeText(this, "Logged in Successfully" + user.getFullName(), Toast.LENGTH_SHORT).show();
 
         name.setText("Welcome\n" + user.getFullName());
-        System.out.println(user.getBankAccountNumber() + " " + user.getPhoneNumber() + " " + user.getBankBranch() + " " + user.getFullName() + " " + user.getPassword());
 
         send.setOnClickListener(this.sendActicity());
         receive.setOnClickListener(this.receiveActivity());

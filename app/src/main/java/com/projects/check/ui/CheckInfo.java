@@ -1,7 +1,8 @@
-package com.projects.check;
+package com.projects.check.ui;
 
 import android.app.Activity;
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
@@ -13,6 +14,10 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
+import com.projects.check.model.Check;
+import com.projects.check.database.FirebaseConnection;
+import com.projects.check.R;
+import com.projects.check.model.User;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.util.Calendar;
@@ -115,5 +120,11 @@ public class CheckInfo extends Activity {
 
     }
 
-
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent out = new Intent(this, ChoosingAction.class);
+        out.putExtra("user", user);
+        startActivity(out);
+    }
 }

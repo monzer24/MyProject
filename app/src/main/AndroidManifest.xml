@@ -15,20 +15,20 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".LogInActivity">
+        <activity android:name=".ui.LogInActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CapturedImage" />
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".SignUpActivity"/>
+        <activity android:name=".ui.CapturedImage" />
+        <activity android:name=".ui.MainActivity"/>
+        <activity android:name=".ui.SignUpActivity"/>
         <!--<activity android:name=".LogInActivity"/>-->
-        <activity android:name=".CheckInfo"/>
-        <activity android:name=".ChoosingAction"/>
-        <activity android:name=".RetrieveCheck" />
+        <activity android:name=".ui.CheckInfo"/>
+        <activity android:name=".ui.ChoosingAction"/>
+        <activity android:name=".ui.RetrieveCheck" />
 
         <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES" android:value="ocr"/>
     </application>

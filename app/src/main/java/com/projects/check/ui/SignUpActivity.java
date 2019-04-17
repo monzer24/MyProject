@@ -1,4 +1,4 @@
-package com.projects.check;
+package com.projects.check.ui;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -6,6 +6,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import com.projects.check.database.FirebaseConnection;
+import com.projects.check.R;
+import com.projects.check.model.User;
 
 public class SignUpActivity extends Activity {
 
@@ -47,8 +50,7 @@ public class SignUpActivity extends Activity {
                 user.setPassword(password.getText().toString());
                 user.setBankAccountNumber(accountNumber.getText().toString());
                 user.setBankBranch(bankBranch.getSelectedItem().toString());
-                System.out.println("user is that :  " + user.getBankAccountNumber() + " " + user.getPassword() + " " + user.getFullName() + " " + user.getBankBranch() + "  " + user.getPhoneNumber());
-                boolean flag = connection.signUp(user);
+                connection.signUp(user);
 
             }
         };

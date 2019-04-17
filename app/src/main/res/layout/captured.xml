@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:id="@+id/captured"
     android:background="#26394A"
-    tools:context=".CapturedImage">
+    tools:context=".ui.CapturedImage">
 
 
     <ImageView

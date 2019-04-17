@@ -1,4 +1,4 @@
-package com.projects.check;
+package com.projects.check.model;
 
 import java.io.Serializable;
 

@@ -1,4 +1,4 @@
-package com.projects.check;
+package com.projects.check.database;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -24,6 +24,12 @@ import com.google.firebase.firestore.QuerySnapshot;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+import com.projects.check.R;
+import com.projects.check.model.Check;
+import com.projects.check.model.User;
+import com.projects.check.ui.ChoosingAction;
+import com.projects.check.ui.LogInActivity;
+import com.projects.check.ui.RetrieveCheck;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -39,7 +45,6 @@ public class FirebaseConnection implements Connection<String, Object> {
 
     public FirebaseConnection(Context context) {
         this.context = context;
-        System.out.println(this.context);
     }
 
     public void initConnection(){
@@ -75,7 +80,6 @@ public class FirebaseConnection implements Connection<String, Object> {
             }).addOnCompleteListener(new OnCompleteListener<Uri>() {
                 @Override
                 public void onComplete(@NonNull Task<Uri> task) {
-                    System.out.println("finished");
                     if (task.isSuccessful()) {
                         res = task.getResult().toString();
                         addCheck(res, info, user);
@@ -87,7 +91,6 @@ public class FirebaseConnection implements Connection<String, Object> {
     @Override
     public String addCheck(String url, Map<String ,Object> info, User user) {
         info.put("picture", url);
-        System.out.println(info);
         String id = new UUID(2, 2).randomUUID().toString();
         final String docId = id.substring(id.length() - 12, id.length()).toUpperCase();
         try {
@@ -105,7 +108,6 @@ public class FirebaseConnection implements Connection<String, Object> {
                                     ClipboardManager clip = (ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
                                     ClipData data = ClipData.newPlainText(docId, docId);
                                     clip.setPrimaryClip(data);
-                                    System.out.println(docId);
                                     Toast.makeText(context, docId + "has been Copied to clip board", Toast.LENGTH_SHORT).show();
                                     Intent in = new Intent(context, ChoosingAction.class);
                                     in.putExtra("user", user);
@@ -129,7 +131,6 @@ public class FirebaseConnection implements Connection<String, Object> {
                             }).show();
                 }
             });
-            System.out.println("Doc ID : " + docId);
             return docId;
         }catch (NullPointerException e){
             return null;
@@ -142,15 +143,14 @@ public class FirebaseConnection implements Connection<String, Object> {
         que.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
             @Override
             public void onComplete(@NonNull Task<QuerySnapshot> task) {
-                System.out.println("here");
                 if(task != null && task.getResult().size() != 0){
                     for(DocumentSnapshot doc : task.getResult().getDocuments()){
-                        System.out.println(doc.getString("bankNo"));
                         if(user.getBankAccountNumber().equals(doc.get("bankNo")) && user.getPassword().equals(doc.get("password"))){
                             user.setFullName(doc.getString("fullName"));
                             user.setPhoneNumber(doc.getString("phoneNumber"));
                             user.setBankBranch(doc.getString("bankBranch"));
                             Intent in = new Intent(context, ChoosingAction.class);
+                            Toast.makeText(context, "Logged in Successfully" + user.getFullName(), Toast.LENGTH_SHORT).show();
                             in.putExtra("user", user);
                             context.startActivity(in);
                         }else{
@@ -163,7 +163,6 @@ public class FirebaseConnection implements Connection<String, Object> {
                         }
                     }
                 }else{
-                    System.out.println("elsing");
                     Dialog d = new AlertDialog.Builder(context)
                             .setIcon(R.drawable.check)
                             .setTitle("Login Failed")
@@ -187,7 +186,6 @@ public class FirebaseConnection implements Connection<String, Object> {
 
     @Override
     public boolean signUp(User user) {
-        System.out.println(user.toString());
         final boolean[] success = {false};
         Map<String, Object> userMap = new HashMap<>();
         userMap.put("fullName", user.getFullName());
@@ -212,7 +210,6 @@ public class FirebaseConnection implements Connection<String, Object> {
         store.collection("Checks").document(id).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
             public void onSuccess(DocumentSnapshot doc) {
-                System.out.println("is it? " + user.getFullName().equals(doc.getString("recipientName")));
                 if(user.getFullName().equals(doc.getString("recipientName"))) {
                     Check check = new Check();
                     check.setCheckId(id);
@@ -263,7 +260,6 @@ public class FirebaseConnection implements Connection<String, Object> {
                                     public void onClick(DialogInterface dialog, int which) {
                                         Intent in = new Intent(context, ChoosingAction.class);
                                         in.putExtra("user", user);
-                                        System.out.println("USER : " + user.getFullName());
                                         context.startActivity(in);
                                     }
                                 })

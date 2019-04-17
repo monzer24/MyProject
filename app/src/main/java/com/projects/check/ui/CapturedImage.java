@@ -1,4 +1,4 @@
-package com.projects.check;
+package com.projects.check.ui;
 
 import android.app.Activity;
 import android.content.Context;
@@ -10,6 +10,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
+import com.projects.check.R;
+import com.projects.check.model.User;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.OutputStream;

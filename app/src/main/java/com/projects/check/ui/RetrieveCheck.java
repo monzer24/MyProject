@@ -1,4 +1,4 @@
-package com.projects.check;
+package com.projects.check.ui;
 
 import android.app.Activity;
 import android.net.Uri;
@@ -9,6 +9,10 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.projects.check.model.Check;
+import com.projects.check.database.FirebaseConnection;
+import com.projects.check.R;
+import com.projects.check.model.User;
 import com.squareup.picasso.Picasso;
 
 public class RetrieveCheck extends Activity {

@@ -1,10 +1,12 @@
-package com.projects.check;
+package com.projects.check.database;
+
+import com.projects.check.model.User;
 
 import java.util.Map;
 
 public interface Connection<K, V> {
 
-    void uploadImage(byte[] bytes, Map <String, Object> info,User user);
+    void uploadImage(byte[] bytes, Map <String, Object> info, User user);
 
     String addCheck(String imageURL, Map<K, V> info, User user);
 

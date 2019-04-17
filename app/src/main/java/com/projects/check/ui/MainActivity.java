@@ -1,4 +1,4 @@
-package com.projects.check;
+package com.projects.check.ui;
 
 import android.Manifest;
 import android.content.Context;
@@ -33,6 +33,8 @@ import android.view.TextureView;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
+import com.projects.check.R;
+import com.projects.check.model.User;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -128,7 +130,6 @@ public class MainActivity extends AppCompatActivity {
             {
                 width = jpegSizes[0].getWidth();
                 height = jpegSizes[0].getHeight();
-                System.out.println(width + " " + height);
             }
             final ImageReader reader = ImageReader.newInstance(width/2,height/2,ImageFormat.JPEG,1);
             List<Surface> outputSurface = new ArrayList<>(2);

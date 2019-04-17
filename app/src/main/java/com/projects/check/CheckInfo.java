@@ -112,6 +112,7 @@ public class CheckInfo extends Activity {
         checkInfo.put("senderName", user.getFullName());
 
         connect.uploadImage(bytes, checkInfo, user);
+
     }
 
 

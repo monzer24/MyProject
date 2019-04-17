@@ -50,20 +50,18 @@ public class FirebaseConnection implements Connection<String, Object> {
     @Override
     public void uploadImage(byte[] bytes, Map<String, Object> info, User user) {
             StorageReference ref = storage.child("images/" + new Date().toString());
-
-            dia = new ProgressDialog(context);
-
-            dia.setMessage("Uploading ...");
-            dia.setCancelable(false);
-            dia.setButton(0, "Cancel", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    return;
-                }
-            });
-            dia.show();
-
             UploadTask uploadTask = ref.putBytes(bytes); // start uploading
+        dia = new ProgressDialog(context);
+
+        dia.setMessage("Uploading ...");
+        dia.setCancelable(false);
+        dia.setButton( "Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                uploadTask.cancel();
+            }
+        });
+        dia.show();
             Task<Uri> urlTask = uploadTask.continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
                 @Override
                 public Task<Uri> then(@NonNull Task<UploadTask.TaskSnapshot> task) throws Exception {
@@ -90,8 +88,8 @@ public class FirebaseConnection implements Connection<String, Object> {
     public String addCheck(String url, Map<String ,Object> info, User user) {
         info.put("picture", url);
         System.out.println(info);
-        String s = new UUID(2, 2).randomUUID().toString();
-        final String docId = s.substring(s.length() - 12, s.length()).toUpperCase();
+        String id = new UUID(2, 2).randomUUID().toString();
+        final String docId = id.substring(id.length() - 12, id.length()).toUpperCase();
         try {
             store.collection("Checks").document(docId).set(info).addOnSuccessListener(new OnSuccessListener<Void>() {
                 @Override

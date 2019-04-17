@@ -787,6 +787,7 @@ id icon_only
 id ifRoom
 id image
 id imageView
+id imageView2
 id info
 id invisible
 id italic
@@ -798,6 +799,7 @@ id linearLayout2
 id listMode
 id list_item
 id login
+id logout
 id main
 id media_actions
 id message

@@ -36,7 +36,7 @@
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:background="@drawable/rounded"
-        android:backgroundTint="#EE6A55"
+        android:backgroundTint="#42CCAF"
         android:text="Send Check"
         android:fontFamily="sans-serif-smallcaps"
         android:layout_marginTop="50dp"
@@ -52,6 +52,19 @@
         android:background="@drawable/rounded"
         android:backgroundTint="#F2BF49"
         android:text="Receive Check"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_marginTop="12dp"
+        android:textAlignment="center"
+        android:textColor="#fff"/>
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded"
+        android:backgroundTint="#EE6A55"
+        android:text="Logout"
         android:fontFamily="sans-serif-smallcaps"
         android:layout_marginTop="12dp"
         android:textAlignment="center"

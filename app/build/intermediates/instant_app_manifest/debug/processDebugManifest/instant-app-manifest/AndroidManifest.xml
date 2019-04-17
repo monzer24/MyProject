@@ -31,20 +31,20 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.projects.check.LogInActivity" >
+        <activity android:name="com.projects.check.ui.LogInActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.projects.check.CapturedImage" />
-        <activity android:name="com.projects.check.MainActivity" />
-        <activity android:name="com.projects.check.SignUpActivity" />
+        <activity android:name="com.projects.check.ui.CapturedImage" />
+        <activity android:name="com.projects.check.ui.MainActivity" />
+        <activity android:name="com.projects.check.ui.SignUpActivity" />
         <!-- <activity android:name=".LogInActivity"/> -->
-        <activity android:name="com.projects.check.CheckInfo" />
-        <activity android:name="com.projects.check.ChoosingAction" />
-        <activity android:name="com.projects.check.RetrieveCheck" />
+        <activity android:name="com.projects.check.ui.CheckInfo" />
+        <activity android:name="com.projects.check.ui.ChoosingAction" />
+        <activity android:name="com.projects.check.ui.RetrieveCheck" />
 
         <meta-data
             android:name="com.google.android.gms.vision.DEPENDENCIES"

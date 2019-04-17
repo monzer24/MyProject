@@ -126,5 +126,6 @@ public class CheckInfo extends Activity {
         Intent out = new Intent(this, ChoosingAction.class);
         out.putExtra("user", user);
         startActivity(out);
+        finish();
     }
 }

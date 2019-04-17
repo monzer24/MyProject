@@ -51,6 +51,7 @@ public class CapturedImage extends Activity {
             Intent back = new Intent(CapturedImage.this, MainActivity.class);
             back.putExtra("user", user);
             startActivity(back);
+            finish();
         }
     };
 
@@ -63,6 +64,7 @@ public class CapturedImage extends Activity {
             intent.putExtra("path", filePath);
             intent.putExtra("user", user);
             startActivity(intent);
+            finish();
         }
     };
 

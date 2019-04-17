@@ -1,5 +1,6 @@
 package com.projects.check.database;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.ProgressDialog;
@@ -29,6 +30,7 @@ import com.projects.check.model.Check;
 import com.projects.check.model.User;
 import com.projects.check.ui.ChoosingAction;
 import com.projects.check.ui.LogInActivity;
+import com.projects.check.ui.MainActivity;
 import com.projects.check.ui.RetrieveCheck;
 import java.util.Date;
 import java.util.HashMap;
@@ -112,6 +114,7 @@ public class FirebaseConnection implements Connection<String, Object> {
                                     Intent in = new Intent(context, ChoosingAction.class);
                                     in.putExtra("user", user);
                                     context.startActivity(in);
+                                    ((Activity)context).finish();
                                 }
                             }).show();
                 }
@@ -153,6 +156,7 @@ public class FirebaseConnection implements Connection<String, Object> {
                             Toast.makeText(context, "Logged in Successfully" + user.getFullName(), Toast.LENGTH_SHORT).show();
                             in.putExtra("user", user);
                             context.startActivity(in);
+                            ((Activity)context).finish();
                         }else{
                             Dialog d = new AlertDialog.Builder(context)
                                     .setIcon(R.drawable.check)
@@ -200,6 +204,7 @@ public class FirebaseConnection implements Connection<String, Object> {
                 Toast.makeText(context, "User Registered Successfully", Toast.LENGTH_SHORT).show();
                 Intent in = new Intent(context, LogInActivity.class);
                 context.startActivity(in);
+                ((Activity)context).finish();
             }
         });
         return success[0];
@@ -224,6 +229,7 @@ public class FirebaseConnection implements Connection<String, Object> {
                     in.putExtra("check", check);
                     in.putExtra("user", user);
                     context.startActivity(in);
+                    ((Activity)context).finish();
                 }else{
                     Toast.makeText(context, "No check for your with this ID", Toast.LENGTH_SHORT).show();
                 }
@@ -261,6 +267,7 @@ public class FirebaseConnection implements Connection<String, Object> {
                                         Intent in = new Intent(context, ChoosingAction.class);
                                         in.putExtra("user", user);
                                         context.startActivity(in);
+                                        ((Activity)context).finish();
                                     }
                                 })
                                 .show();

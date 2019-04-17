@@ -180,10 +180,10 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/gl-zarqa-ima
 		ADDED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml:11:9-35
 	android:theme
 		ADDED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml:16:9-40
-activity#com.projects.check.LogInActivity
+activity#com.projects.check.ui.LogInActivity
 ADDED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml:18:9-24:20
 	android:name
-		ADDED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml:18:19-48
+		ADDED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml:18:19-51
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml:19:13-23:29
 action#android.intent.action.MAIN
@@ -194,30 +194,30 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml:22:17-77
 	android:name
 		ADDED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml:22:27-74
-activity#com.projects.check.CapturedImage
-ADDED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml:25:9-51
+activity#com.projects.check.ui.CapturedImage
+ADDED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml:25:9-54
 	android:name
-		ADDED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml:25:19-48
-activity#com.projects.check.MainActivity
-ADDED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml:26:9-49
+		ADDED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml:25:19-51
+activity#com.projects.check.ui.MainActivity
+ADDED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml:26:9-52
 	android:name
-		ADDED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml:26:19-47
-activity#com.projects.check.SignUpActivity
-ADDED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml:27:9-51
+		ADDED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml:26:19-50
+activity#com.projects.check.ui.SignUpActivity
+ADDED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml:27:9-54
 	android:name
-		ADDED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml:27:19-49
-activity#com.projects.check.CheckInfo
-ADDED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml:29:9-46
+		ADDED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml:27:19-52
+activity#com.projects.check.ui.CheckInfo
+ADDED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml:29:9-49
 	android:name
-		ADDED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml:29:19-44
-activity#com.projects.check.ChoosingAction
-ADDED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml:30:9-51
+		ADDED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml:29:19-47
+activity#com.projects.check.ui.ChoosingAction
+ADDED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml:30:9-54
 	android:name
-		ADDED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml:30:19-49
-activity#com.projects.check.RetrieveCheck
-ADDED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml:31:9-51
+		ADDED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml:30:19-52
+activity#com.projects.check.ui.RetrieveCheck
+ADDED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml:31:9-54
 	android:name
-		ADDED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml:31:19-48
+		ADDED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml:31:19-51
 meta-data#com.google.android.gms.vision.DEPENDENCIES
 ADDED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml:33:9-99
 	android:value

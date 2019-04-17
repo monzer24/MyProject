@@ -178,6 +178,7 @@ public class MainActivity extends AppCompatActivity {
                     intent.putExtra("path", filePath);
                     intent.putExtra("user", user);
                     startActivity(intent);
+                    finish();
                 }
             };
 

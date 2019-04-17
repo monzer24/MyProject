@@ -6,19 +6,21 @@
     android:layout_height="match_parent"
     android:background="#26394A">
 
-    <android.support.constraint.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="8dp">
+        android:layout_margin="12dp"
+        android:orientation="vertical">
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="256dp"
             android:layout_height="256dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="8dp"
             android:src="@drawable/check"
+            android:layout_gravity="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -31,10 +33,7 @@
             android:background="@drawable/rounded"
             android:hint="Full Name, 4 Sections"
             android:textAlignment="center"
-            android:inputType="text"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            android:inputType="text" />
 
         <EditText
             android:id="@+id/phone"
@@ -44,10 +43,7 @@
             android:background="@drawable/rounded"
             android:hint="Phone Number"
             android:textAlignment="center"
-            android:inputType="phone"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/fullname" />
+            android:inputType="phone" />
 
         <EditText
             android:id="@+id/account"
@@ -57,10 +53,7 @@
             android:background="@drawable/rounded"
             android:hint="Bank Acount No."
             android:textAlignment="center"
-            android:inputType="number"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/phone" />
+            android:inputType="number" />
 
         <EditText
             android:id="@+id/password"
@@ -70,9 +63,7 @@
             android:background="@drawable/rounded"
             android:hint="Password"
             android:inputType="textPassword"
-            android:textAlignment="center"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/account" />
+            android:textAlignment="center" />
 
         <Spinner
             android:id="@+id/bank"
@@ -81,29 +72,21 @@
             android:layout_marginTop="12dp"
             android:background="@drawable/rounded"
             android:entries="@array/banks"
-            android:textAlignment="center"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/password" />
+            android:textAlignment="center" />
 
         <Button
             android:id="@+id/signUp"
             android:layout_width="250dp"
             android:layout_height="40dp"
-            android:layout_marginStart="8dp"
             android:layout_marginTop="28dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="50dp"
             android:background="@drawable/rounded"
             android:backgroundTint="#EE6A55"
             android:text="Sign up"
             android:textAlignment="center"
             android:textColor="#fff"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/bank" />
+            android:layout_gravity="center"/>
 
-    </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
 
 </ScrollView>

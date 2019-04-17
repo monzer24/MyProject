@@ -3276,11 +3276,12 @@ public final class R {
     public static final int uniform=0x7f0800be;
     public static final int up=0x7f0800bf;
     public static final int useLogo=0x7f0800c0;
-    public static final int wide=0x7f0800c1;
-    public static final int withText=0x7f0800c2;
-    public static final int wrap=0x7f0800c3;
-    public static final int wrap_content=0x7f0800c4;
-    public static final int x=0x7f0800c5;
+    public static final int user=0x7f0800c1;
+    public static final int wide=0x7f0800c2;
+    public static final int withText=0x7f0800c3;
+    public static final int wrap=0x7f0800c4;
+    public static final int wrap_content=0x7f0800c5;
+    public static final int x=0x7f0800c6;
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f090000;

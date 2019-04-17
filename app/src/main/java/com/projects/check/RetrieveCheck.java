@@ -1,7 +1,6 @@
 package com.projects.check;
 
 import android.app.Activity;
-import android.media.Image;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -10,7 +9,6 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.squareup.picasso.Picasso;
 
 public class RetrieveCheck extends Activity {
@@ -89,6 +87,11 @@ public class RetrieveCheck extends Activity {
     }
 
     private View.OnClickListener checkCash() {
-        return null;
+        return new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                connection.cashCheck(info.getCheckId(), user);
+            }
+        };
     }
 }

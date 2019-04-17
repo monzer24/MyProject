@@ -884,6 +884,7 @@ id topPanel
 id uniform
 id up
 id useLogo
+id user
 id wide
 id withText
 id wrap

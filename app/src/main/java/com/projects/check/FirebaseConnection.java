@@ -55,6 +55,12 @@ public class FirebaseConnection implements Connection<String, Object> {
 
             dia.setMessage("Uploading ...");
             dia.setCancelable(false);
+            dia.setButton(0, "Cancel", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    return;
+                }
+            });
             dia.show();
 
             UploadTask uploadTask = ref.putBytes(bytes); // start uploading

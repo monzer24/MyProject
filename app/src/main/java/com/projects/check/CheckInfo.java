@@ -72,19 +72,6 @@ public class CheckInfo extends Activity {
         }
     };
 
-    private void upload(byte[] bytes, Check info) {
-
-        Map<String, Object> checkInfo = new HashMap<>();
-        checkInfo.put("bankBranch", info.getBankBranch());
-        checkInfo.put("recipientName", info.getRecipientName());
-        checkInfo.put("amount", info.getAmount());
-        checkInfo.put("date", info.getCheckDate());
-        checkInfo.put("senderName", user.getFullName());
-
-        connect.uploadImage(bytes, checkInfo, user);
-    }
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -114,5 +101,18 @@ public class CheckInfo extends Activity {
         submit.setOnClickListener(this.submitListener);
 
     }
+
+    private void upload(byte[] bytes, Check info) {
+
+        Map<String, Object> checkInfo = new HashMap<>();
+        checkInfo.put("bankBranch", info.getBankBranch());
+        checkInfo.put("recipientName", info.getRecipientName());
+        checkInfo.put("amount", info.getAmount());
+        checkInfo.put("date", info.getCheckDate());
+        checkInfo.put("senderName", user.getFullName());
+
+        connect.uploadImage(bytes, checkInfo, user);
+    }
+
 
 }

@@ -1,7 +1,6 @@
 package com.projects.check.model;
 
 import java.io.Serializable;
-import java.util.List;
 
 public class User implements Serializable {
 
@@ -10,16 +9,6 @@ public class User implements Serializable {
     private String password;
     private String bankBranch;
     private String bankAccountNumber;
-
-    private List<Check> checks;
-
-    public List<Check> getChecks() {
-        return checks;
-    }
-
-    public void setChecks(List<Check> checks) {
-        this.checks = checks;
-    }
 
     public String getFullName() {
         return fullName;

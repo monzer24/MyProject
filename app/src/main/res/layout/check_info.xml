@@ -57,6 +57,16 @@
                 android:background="@drawable/rounded"
                 android:textAlignment="center" />
 
+            <EditText
+                android:id="@+id/checker"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="4dp"
+                android:hint="Checker number"
+                android:inputType="number"
+                android:background="@drawable/rounded"
+                android:textAlignment="center" />
+
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -83,7 +93,6 @@
                             android:text="Amount"
                             android:textAlignment="center" />
 
-
                     </LinearLayout>
 
                     <LinearLayout
@@ -98,6 +107,7 @@
                             android:layout_weight="1"
                             android:layout_marginRight="2dp"
                             android:hint="JOD"
+                            android:inputType="number"
                             android:textAlignment="center"
                             android:background="@drawable/rounded"/>
 
@@ -108,6 +118,7 @@
                             android:layout_weight="1"
                             android:layout_marginLeft="2dp"
                             android:hint="Fils"
+                            android:inputType="number"
                             android:textAlignment="center"
                             android:background="@drawable/rounded"/>
 

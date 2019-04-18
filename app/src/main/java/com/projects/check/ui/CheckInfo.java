@@ -6,7 +6,10 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
+import android.util.Base64;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -20,8 +23,11 @@ import com.projects.check.R;
 import com.projects.check.model.User;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class CheckInfo extends Activity {
@@ -30,6 +36,7 @@ public class CheckInfo extends Activity {
     ImageView capturedImage;
     Spinner branch;
     EditText name;
+    EditText checker;
     EditText jodAmount;
     EditText filsAmount;
     EditText date;
@@ -66,7 +73,8 @@ public class CheckInfo extends Activity {
             check.setRecipientName(name.getText().toString());
             check.setAmount(jodAmount.getText().toString(), filsAmount.getText().toString());
             check.setCheckDate(date.getText().toString());
-
+            String id = "\"" + checker.getText().toString() + "\" " + whichBranch(branch.getSelectedItemPosition()) + ":" + user.getBankAccountNumber();
+            check.setCheckId(id);
             Bitmap bit = ((BitmapDrawable)capturedImage.getDrawable()).getBitmap();
             ByteArrayOutputStream stream = new ByteArrayOutputStream();
             bit.compress(Bitmap.CompressFormat.PNG, 100, stream);
@@ -76,6 +84,11 @@ public class CheckInfo extends Activity {
 
         }
     };
+
+    private String whichBranch(int branch) {
+        String[] array = getResources().getStringArray(R.array.numbers);
+        return 44 + "_" +  array[branch];
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -94,6 +107,7 @@ public class CheckInfo extends Activity {
         senderName.setText(user.getFullName());
         branch = findViewById(R.id.bank_branch);
         name = findViewById(R.id.name);
+        checker = findViewById(R.id.checker);
         jodAmount = findViewById(R.id.amount_jod);
         filsAmount= findViewById(R.id.amount_fils);
         date = findViewById(R.id.date);
@@ -112,6 +126,7 @@ public class CheckInfo extends Activity {
         Map<String, Object> checkInfo = new HashMap<>();
         checkInfo.put("bankBranch", info.getBankBranch());
         checkInfo.put("recipientName", info.getRecipientName());
+        checkInfo.put("id", info.getCheckId());
         checkInfo.put("amount", info.getAmount());
         checkInfo.put("date", info.getCheckDate());
         checkInfo.put("senderName", user.getFullName());

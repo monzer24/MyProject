@@ -3,7 +3,7 @@
     <string name="app_name">Checker</string>
 
     <string-array name="banks">
-        <item>Please Choose your bank .. </item>
+        <item>Please Choose your bank ..</item>
         <item>Jordan Islamic Bank</item>
         <item>Arab Bank</item>
         <item>Bank Of Jordan</item>
@@ -11,6 +11,17 @@
         <item>Jordan Kuwait Bank</item>
         <item>Jordan Ahli Bank</item>
         <item>Bank al Etihad</item>
+    </string-array>
+
+    <string-array name="numbers">
+        <item>0</item>
+        <item>1330</item>
+        <item>2550</item>
+        <item>1763</item>
+        <item>0823</item>
+        <item>8343</item>
+        <item>4333</item>
+        <item>1001</item>
     </string-array>
 
 </resources>

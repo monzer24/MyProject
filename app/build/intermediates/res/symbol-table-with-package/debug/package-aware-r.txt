@@ -12,6 +12,7 @@ anim abc_slide_out_top
 anim abc_tooltip_enter
 anim abc_tooltip_exit
 array banks
+array numbers
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -750,6 +751,7 @@ id check_amount
 id check_branch
 id check_date
 id checkbox
+id checker
 id checkid
 id chronometer
 id clip_horizontal

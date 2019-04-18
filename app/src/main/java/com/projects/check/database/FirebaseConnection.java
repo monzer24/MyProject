@@ -93,8 +93,7 @@ public class FirebaseConnection implements Connection<String, Object> {
     @Override
     public String addCheck(String url, Map<String ,Object> info, User user) {
         info.put("picture", url);
-        String id = new UUID(2, 2).randomUUID().toString();
-        final String docId = id.substring(id.length() - 12, id.length()).toUpperCase();
+        String docId = (String) info.get("id");
         try {
             store.collection("Checks").document(docId).set(info).addOnSuccessListener(new OnSuccessListener<Void>() {
                 @Override
@@ -251,6 +250,7 @@ public class FirebaseConnection implements Connection<String, Object> {
         Map<String, Object> bankData = new HashMap<>();
         bankData.put("User", user);
         bankData.put("Check", doc.getData());
+        bankData.put("id", doc.getId());
         store.collection("Bank").add(bankData).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
             @Override
             public void onSuccess(DocumentReference documentReference) {

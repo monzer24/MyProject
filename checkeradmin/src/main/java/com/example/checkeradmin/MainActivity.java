@@ -13,10 +13,11 @@ public class MainActivity extends AppCompatActivity {
     EditText password;
     Button login;
     private FirebaseConnection connection;
+    private User user;
     private View.OnClickListener logIn = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-
+            connection.logIn(user);
         }
     };
 
@@ -26,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         connection = new FirebaseConnection(this);
-
+        connection.init();
 
         accountNo = findViewById(R.id.bank_no);
         password = findViewById(R.id.password);

@@ -52,6 +52,7 @@
             android:background="@drawable/rounded"
             android:backgroundTint="#FF42CCAF"
             android:text="Log in"
+            android:textColor="#fff"
             android:textAlignment="center" />
 
         <TextView
@@ -84,6 +85,7 @@
             android:background="@drawable/rounded"
             android:backgroundTint="#EE6A55"
             android:text="Sign up"
+            android:textColor="#fff"
             android:textAlignment="center" />
     </LinearLayout>
 

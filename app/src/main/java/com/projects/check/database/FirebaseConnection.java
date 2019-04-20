@@ -195,31 +195,32 @@ public class FirebaseConnection implements Connection<String, Object> {
 
     @Override
     public void signUp(User user) {
-        final boolean[] success = {false};
         store.collection("Bank").document(user.getBankAccountNumber()).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
             public void onSuccess(DocumentSnapshot doc) {
-                System.out.println(user.getBankAccountNumber().length()+ " " + doc.getString("accountNo").trim().length() + "_" + user.getBankBranch().length()+ " " + doc.getString("branch").trim().length());
-                if(user.getBankAccountNumber().contains(doc.getString("accountNo").trim()) && user.getBankBranch().equals(doc.getString("branch").trim())){
-                    System.out.println("true");
-                    Map<String, Object> userMap = new HashMap<>();
-                    userMap.put("name", user.getFullName());
-                    userMap.put("accountNo", user.getBankAccountNumber());
-                    userMap.put("branch", user.getBankBranch());
-                    userMap.put("phoneNo", user.getPhoneNumber());
-                    userMap.put("password", user.getPassword());
-                    userMap.put("ssn", doc.getString("ssn"));
-                    userMap.put("balance", doc.getString("balance"));
-                    store.collection("Users").document(user.getBankAccountNumber()).set(userMap).addOnSuccessListener(new OnSuccessListener<Void>() {
-                        @Override
-                        public void onSuccess(Void aVoid) {
-                            Toast.makeText(context, "User Registered Successfully", Toast.LENGTH_SHORT).show();
-                            Intent in = new Intent(context, LogInActivity.class);
-                            context.startActivity(in);
-                            ((Activity)context).finish();
-                        }
-                    });
-                }else{
+                try {
+                    if (doc != null && user.getBankAccountNumber().contains(doc.getString("accountNo").trim()) && user.getBankBranch().equals(doc.getString("branch").trim())) {
+                        System.out.println(user.getBankAccountNumber().length() + " " + doc.getString("accountNo").trim().length() + "_" + user.getBankBranch().length() + " " + doc.getString("branch").trim().length());
+                        System.out.println("true");
+                        Map<String, Object> userMap = new HashMap<>();
+                        userMap.put("name", user.getFullName());
+                        userMap.put("accountNo", user.getBankAccountNumber());
+                        userMap.put("branch", user.getBankBranch());
+                        userMap.put("phoneNo", user.getPhoneNumber());
+                        userMap.put("password", user.getPassword());
+                        userMap.put("ssn", doc.getString("ssn"));
+                        userMap.put("balance", doc.getString("balance"));
+                        store.collection("Users").document(user.getBankAccountNumber()).set(userMap).addOnSuccessListener(new OnSuccessListener<Void>() {
+                            @Override
+                            public void onSuccess(Void aVoid) {
+                                Toast.makeText(context, "User Registered Successfully", Toast.LENGTH_SHORT).show();
+                                Intent in = new Intent(context, LogInActivity.class);
+                                context.startActivity(in);
+                                ((Activity) context).finish();
+                            }
+                        });
+                    }
+                }catch (NullPointerException e){
                     new AlertDialog.Builder(context)
                             .setIcon(R.drawable.check)
                             .setTitle("Failed !")

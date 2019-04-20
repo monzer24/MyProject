@@ -173,9 +173,9 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/gl-zarqa-ima
 	tools:ignore
 		ADDED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml:17:9-48
 	android:roundIcon
-		ADDED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml:14:9-54
+		ADDED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml:14:9-53
 	android:icon
-		ADDED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml:12:9-43
+		ADDED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml:12:9-42
 	android:allowBackup
 		ADDED from /Users/gl-zarqa-imac-6/Desktop/MyProject/app/src/main/AndroidManifest.xml:11:9-35
 	android:theme

@@ -9,6 +9,24 @@ public class User implements Serializable {
     private String password;
     private String bankBranch;
     private String bankAccountNumber;
+    private double balance;
+    private String ssn;
+
+    public String getSsn() {
+        return ssn;
+    }
+
+    public void setSsn(String ssn) {
+        this.ssn = ssn;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
 
     public String getFullName() {
         return fullName;

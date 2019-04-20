@@ -18,6 +18,28 @@ public class LogInActivity extends Activity {
     EditText password;
     Button logIn;
     Button signUp;
+    private View.OnClickListener login = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            if (bankNo.getText().toString().equals("") && password.getText().toString().equals("")) {
+                Toast.makeText(LogInActivity.this, "Account number or password fields can not be empty, Please fill them and try again", Toast.LENGTH_SHORT).show();
+            } else {
+                User user = new User();
+                user.setBankAccountNumber(bankNo.getText().toString().trim());
+                user.setPassword(password.getText().toString().trim());
+                System.out.println(user.getBankBranch() + " " + user.getPassword());
+                connection.logIn(user);
+            }
+        }
+    };
+
+    private View.OnClickListener toSignUp = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            startActivity(new Intent(LogInActivity.this, SignUpActivity.class));
+            finish();
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,36 +54,9 @@ public class LogInActivity extends Activity {
         connection = new FirebaseConnection(this);
         connection.initConnection();
 
-        logIn.setOnClickListener(this.login());
-        signUp.setOnClickListener(this.toSignUp());
+        logIn.setOnClickListener(this.login);
+        signUp.setOnClickListener(this.toSignUp);
 
     }
 
-    private View.OnClickListener toSignUp() {
-        return new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(LogInActivity.this, SignUpActivity.class));
-                finish();
-            }
-        };
-    }
-
-    View.OnClickListener login() {
-        if (bankNo.getText() == null && password.getText() == null) {
-            Toast.makeText(LogInActivity.this, "Account number or password fields can not be empty, Please fill them and try again", Toast.LENGTH_SHORT).show();
-            return null;
-        } else {
-            return new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    User user = new User();
-                    user.setBankAccountNumber(bankNo.getText().toString());
-                    user.setPassword(password.getText().toString());
-                    connection.logIn(user);
-                }
-
-            };
-        }
-    }
 }

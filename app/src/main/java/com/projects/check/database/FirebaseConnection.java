@@ -2,7 +2,6 @@ package com.projects.check.database;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.ClipData;
 import android.content.ClipboardManager;
@@ -20,8 +19,6 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.Query;
-import com.google.firebase.firestore.QuerySnapshot;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
@@ -30,12 +27,10 @@ import com.projects.check.model.Check;
 import com.projects.check.model.User;
 import com.projects.check.ui.ChoosingAction;
 import com.projects.check.ui.LogInActivity;
-import com.projects.check.ui.MainActivity;
 import com.projects.check.ui.RetrieveCheck;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.UUID;
 
 public class FirebaseConnection implements Connection<String, Object> {
 
@@ -56,19 +51,22 @@ public class FirebaseConnection implements Connection<String, Object> {
 
     @Override
     public void uploadImage(byte[] bytes, Map<String, Object> info, User user) {
-            StorageReference ref = storage.child("images/" + new Date().toString());
-            UploadTask uploadTask = ref.putBytes(bytes); // start uploading
-        dia = new ProgressDialog(context);
+        StorageReference ref = storage.child("images/" + new Date().toString());
+        UploadTask uploadTask = ref.putBytes(bytes); // start uploading
+        System.out.println(user.getBalance() <= Double.parseDouble((String) info.get("amount")));
 
-        dia.setMessage("Uploading ...");
-        dia.setCancelable(false);
-        dia.setButton( "Cancel", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                uploadTask.cancel();
-            }
-        });
-        dia.show();
+        if(Double.parseDouble((String) info.get("amount")) <= user.getBalance()){
+
+            dia = new ProgressDialog(context);
+            dia.setMessage("Uploading ...");
+            dia.setCancelable(false);
+            dia.setButton( "Cancel", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    uploadTask.cancel();
+                }
+            });
+            dia.show();
             Task<Uri> urlTask = uploadTask.continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
                 @Override
                 public Task<Uri> then(@NonNull Task<UploadTask.TaskSnapshot> task) throws Exception {
@@ -88,6 +86,14 @@ public class FirebaseConnection implements Connection<String, Object> {
                     }
                 }
             });
+        }else{
+            new AlertDialog.Builder(context)
+                    .setIcon(R.drawable.x)
+                    .setTitle("Failed !")
+                    .setMessage("Your balance is " + user.getBalance() + ", not enough to cash this check, please check out your balance your the check amount")
+                    .setNegativeButton("OK", null)
+                    .show();
+        }
     }
 
     @Override
@@ -99,7 +105,7 @@ public class FirebaseConnection implements Connection<String, Object> {
                 @Override
                 public void onSuccess(Void aVoid) {
                     dia.dismiss();
-                    Dialog d = new AlertDialog.Builder(context)
+                    new AlertDialog.Builder(context)
                             .setIcon(R.drawable.check)
                             .setTitle("Successful !")
                             .setMessage("Check ID : " + docId + " Copy it and send it to the recipient")
@@ -120,7 +126,7 @@ public class FirebaseConnection implements Connection<String, Object> {
             }).addOnFailureListener(new OnFailureListener() {
                 @Override
                 public void onFailure(@NonNull Exception e) {
-                    Dialog d = new AlertDialog.Builder(context)
+                    new AlertDialog.Builder(context)
                             .setIcon(R.drawable.x)
                             .setTitle("Failed !")
                             .setMessage("A failure happened and the check has not been uploaded")
@@ -141,32 +147,32 @@ public class FirebaseConnection implements Connection<String, Object> {
 
     @Override
     public void logIn(User user) {
-        Query que = store.collection("Users").whereEqualTo("bankNo", user.getBankAccountNumber());
-        que.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+         store.collection("Users").document(user.getBankAccountNumber()).get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
             @Override
-            public void onComplete(@NonNull Task<QuerySnapshot> task) {
-                if(task != null && task.getResult().size() != 0){
-                    for(DocumentSnapshot doc : task.getResult().getDocuments()){
-                        if(user.getBankAccountNumber().equals(doc.get("bankNo")) && user.getPassword().equals(doc.get("password"))){
-                            user.setFullName(doc.getString("fullName"));
-                            user.setPhoneNumber(doc.getString("phoneNumber"));
-                            user.setBankBranch(doc.getString("bankBranch"));
-                            Intent in = new Intent(context, ChoosingAction.class);
-                            Toast.makeText(context, "Logged in Successfully" + user.getFullName(), Toast.LENGTH_SHORT).show();
-                            in.putExtra("user", user);
-                            context.startActivity(in);
-                            ((Activity)context).finish();
-                        }else{
-                            Dialog d = new AlertDialog.Builder(context)
-                                    .setIcon(R.drawable.check)
-                                    .setTitle("Login Failed, ")
-                                    .setMessage("Wrong Banck Account Number or Password")
-                                    .setPositiveButton("Close", null)
-                                    .show();
-                        }
+            public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                if(task != null){
+                    DocumentSnapshot doc = task.getResult();
+                    if(user.getBankAccountNumber().equals(doc.get("accountNo")) && user.getPassword().equals(doc.get("password"))){
+                        user.setFullName(doc.getString("name"));
+                        user.setPhoneNumber(doc.getString("phoneNo"));
+                        user.setBankBranch(doc.getString("branch"));
+                        user.setBalance(Double.parseDouble(doc.getString("balance")));
+                        user.setSsn(doc.getString("ssn"));
+                        Intent in = new Intent(context, ChoosingAction.class);
+                        Toast.makeText(context, "Logged in Successfully" + user.getFullName(), Toast.LENGTH_SHORT).show();
+                        in.putExtra("user", user);
+                        context.startActivity(in);
+                        ((Activity)context).finish();
+                    }else{
+                        new AlertDialog.Builder(context)
+                                .setIcon(R.drawable.check)
+                                .setTitle("Login Failed, ")
+                                .setMessage("Wrong Banck Account Number or Password")
+                                .setPositiveButton("Close", null)
+                                .show();
                     }
                 }else{
-                    Dialog d = new AlertDialog.Builder(context)
+                    new AlertDialog.Builder(context)
                             .setIcon(R.drawable.check)
                             .setTitle("Login Failed")
                             .setMessage("User with Bank Account Number " + user.getBankAccountNumber() + " is not exist")
@@ -177,7 +183,7 @@ public class FirebaseConnection implements Connection<String, Object> {
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-                Dialog d = new AlertDialog.Builder(context)
+                new AlertDialog.Builder(context)
                         .setIcon(R.drawable.check)
                         .setTitle("Login Failed")
                         .setMessage("User with Bank Account Number " + user.getBankAccountNumber() + " is not exist")
@@ -188,25 +194,59 @@ public class FirebaseConnection implements Connection<String, Object> {
     }
 
     @Override
-    public boolean signUp(User user) {
+    public void signUp(User user) {
         final boolean[] success = {false};
-        Map<String, Object> userMap = new HashMap<>();
-        userMap.put("fullName", user.getFullName());
-        userMap.put("phoneNumber", user.getPhoneNumber());
-        userMap.put("password", user.getPassword());
-        userMap.put("bankBranch", user.getBankBranch());
-        userMap.put("bankNo", user.getBankAccountNumber());
-
-        store.collection("Users").add(userMap).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+        store.collection("Bank").document(user.getBankAccountNumber()).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
-            public void onSuccess(DocumentReference documentReference) {
-                Toast.makeText(context, "User Registered Successfully", Toast.LENGTH_SHORT).show();
-                Intent in = new Intent(context, LogInActivity.class);
-                context.startActivity(in);
-                ((Activity)context).finish();
+            public void onSuccess(DocumentSnapshot doc) {
+                System.out.println(user.getBankAccountNumber().length()+ " " + doc.getString("accountNo").trim().length() + "_" + user.getBankBranch().length()+ " " + doc.getString("branch").trim().length());
+                if(user.getBankAccountNumber().contains(doc.getString("accountNo").trim()) && user.getBankBranch().equals(doc.getString("branch").trim())){
+                    System.out.println("true");
+                    Map<String, Object> userMap = new HashMap<>();
+                    userMap.put("name", user.getFullName());
+                    userMap.put("accountNo", user.getBankAccountNumber());
+                    userMap.put("branch", user.getBankBranch());
+                    userMap.put("phoneNo", user.getPhoneNumber());
+                    userMap.put("password", user.getPassword());
+                    userMap.put("ssn", doc.getString("ssn"));
+                    userMap.put("balance", doc.getString("balance"));
+                    store.collection("Users").document(user.getBankAccountNumber()).set(userMap).addOnSuccessListener(new OnSuccessListener<Void>() {
+                        @Override
+                        public void onSuccess(Void aVoid) {
+                            Toast.makeText(context, "User Registered Successfully", Toast.LENGTH_SHORT).show();
+                            Intent in = new Intent(context, LogInActivity.class);
+                            context.startActivity(in);
+                            ((Activity)context).finish();
+                        }
+                    });
+                }else{
+                    new AlertDialog.Builder(context)
+                            .setIcon(R.drawable.check)
+                            .setTitle("Failed !")
+                            .setMessage("This user does not exist in this bank, Please visit the bank to make one")
+                            .setPositiveButton("Ok", null)
+                            .show();
+                }
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                new AlertDialog.Builder(context)
+                        .setIcon(R.drawable.check)
+                        .setTitle("Failed !")
+                        .setMessage("This user does not exist in this bank, Please visit the bank to make one")
+                        .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                Intent in = new Intent(context, ChoosingAction.class);
+                                in.putExtra("user", user);
+                                context.startActivity(in);
+                                ((Activity)context).finish();
+                            }
+                        })
+                        .show();
             }
         });
-        return success[0];
     }
 
     @Override
@@ -214,15 +254,15 @@ public class FirebaseConnection implements Connection<String, Object> {
         store.collection("Checks").document(id).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
             public void onSuccess(DocumentSnapshot doc) {
-                if(user.getFullName().equals(doc.getString("recipientName"))) {
+                if(doc != null && user.getFullName().equals(doc.getString("recipientName").trim()) && user.getBankBranch().equals(doc.getString("bankBranch"))) {
                     Check check = new Check();
                     check.setCheckId(id);
-                    check.setSenderName(doc.getString("senderName"));
-                    check.setRecipientName(doc.getString("recipientName"));
-                    check.setAmount(doc.getString("amount"));
-                    check.setBankBranch(doc.getString("bankBranch"));
-                    check.setCheckImage(doc.getString("picture"));
-                    check.setCheckDate(doc.getString("date"));
+                    check.setSenderName(doc.getString("senderName").trim());
+                    check.setRecipientName(doc.getString("recipientName").trim());
+                    check.setAmount(doc.getString("amount").trim());
+                    check.setBankBranch(doc.getString("bankBranch").trim());
+                    check.setCheckImage(doc.getString("picture").trim());
+                    check.setCheckDate(doc.getString("date").trim());
 
                     Intent in = new Intent(context, RetrieveCheck.class);
                     in.putExtra("check", check);
@@ -251,13 +291,13 @@ public class FirebaseConnection implements Connection<String, Object> {
         bankData.put("User", user);
         bankData.put("Check", doc.getData());
         bankData.put("id", doc.getId());
-        store.collection("Bank").add(bankData).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+        store.collection("Cashed Checks").add(bankData).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
             @Override
             public void onSuccess(DocumentReference documentReference) {
                 store.collection("Checks").document(doc.getId()).delete().addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
-                        Dialog d = new AlertDialog.Builder(context)
+                        new AlertDialog.Builder(context)
                                 .setIcon(R.drawable.check)
                                 .setTitle("Successful !")
                                 .setMessage("This check Has been sent to the bank, Please wait for bank confirmation")

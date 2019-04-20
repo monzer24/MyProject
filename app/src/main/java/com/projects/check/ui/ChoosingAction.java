@@ -61,7 +61,7 @@ public class ChoosingAction extends Activity {
         return new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent in = new Intent(ChoosingAction.this, MainActivity.class);
+                Intent in = new Intent(ChoosingAction.this, CameraActivity.class);
                 in.putExtra("user", user);
                 startActivity(in);
                 finish();

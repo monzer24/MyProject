@@ -48,7 +48,7 @@ public class CapturedImage extends Activity {
     View.OnClickListener dismissImage = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Intent back = new Intent(CapturedImage.this, MainActivity.class);
+            Intent back = new Intent(CapturedImage.this, CameraActivity.class);
             back.putExtra("user", user);
             startActivity(back);
             finish();

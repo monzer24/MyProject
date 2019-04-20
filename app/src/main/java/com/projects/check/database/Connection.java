@@ -12,7 +12,7 @@ public interface Connection<K, V> {
 
     void logIn(User user);
 
-    boolean signUp(User user);
+    void signUp(User user);
 
     void retrieveCheck(String id, User user);
 

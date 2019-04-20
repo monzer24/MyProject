@@ -37,18 +37,23 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.projects.check.ui.CapturedImage" />
-        <activity android:name="com.projects.check.ui.MainActivity" />
+        <activity
+            android:name="com.projects.check.ui.CapturedImage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.projects.check.ui.CameraActivity"
+            android:screenOrientation="portrait" />
         <activity android:name="com.projects.check.ui.SignUpActivity" />
         <!-- <activity android:name=".LogInActivity"/> -->
-        <activity android:name="com.projects.check.ui.CheckInfo" />
-        <activity android:name="com.projects.check.ui.ChoosingAction" />
-        <activity android:name="com.projects.check.ui.RetrieveCheck" />
-
-        <meta-data
-            android:name="com.google.android.gms.vision.DEPENDENCIES"
-            android:value="ocr" />
-
+        <activity
+            android:name="com.projects.check.ui.CheckInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.projects.check.ui.ChoosingAction"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.projects.check.ui.RetrieveCheck"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
             android:excludeFromRecents="true"

@@ -45,7 +45,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class CameraActivity extends AppCompatActivity {
 
     private ImageView btnCapture;
     private TextureView textureView;
@@ -54,10 +54,10 @@ public class MainActivity extends AppCompatActivity {
     //Check state orientation of output image
     private static final SparseIntArray ORIENTATIONS = new SparseIntArray();
     static{
-        ORIENTATIONS.append(Surface.ROTATION_0,90);
+//        ORIENTATIONS.append(Surface.ROTATION_0,90);
         ORIENTATIONS.append(Surface.ROTATION_90,0);
         ORIENTATIONS.append(Surface.ROTATION_180,270);
-        ORIENTATIONS.append(Surface.ROTATION_270,180);
+//        ORIENTATIONS.append(Surface.ROTATION_270,180);
     }
 
     private String cameraId;
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
     private CameraCaptureSession cameraCaptureSessions;
     private CaptureRequest.Builder captureRequestBuilder;
     private Size imageDimension;
-    private ImageReader imageReader;
+//    private ImageReader imageReader;
 
     //Save to FILE
     private File file;
@@ -173,8 +173,8 @@ public class MainActivity extends AppCompatActivity {
                 }
                 private void save(byte[] bytes) throws IOException {
                     Bitmap map = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
-                    String filePath= tempFileImage(MainActivity.this,map,"image");
-                    Intent intent = new Intent(MainActivity.this, CapturedImage.class);
+                    String filePath= tempFileImage(CameraActivity.this,map,"image");
+                    Intent intent = new Intent(CameraActivity.this, CapturedImage.class);
                     intent.putExtra("path", filePath);
                     intent.putExtra("user", user);
                     startActivity(intent);
@@ -187,7 +187,7 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onCaptureCompleted(@NonNull CameraCaptureSession session, @NonNull CaptureRequest request, @NonNull TotalCaptureResult result) {
                     super.onCaptureCompleted(session, request, result);
-                    Toast.makeText(MainActivity.this, "Saved "+file, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(CameraActivity.this, "Saved "+file, Toast.LENGTH_SHORT).show();
                     createCameraPreview();
                 }
             };
@@ -250,7 +250,7 @@ public class MainActivity extends AppCompatActivity {
 
                 @Override
                 public void onConfigureFailed(@NonNull CameraCaptureSession cameraCaptureSession) {
-                    Toast.makeText(MainActivity.this, "Changed", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(CameraActivity.this, "Changed", Toast.LENGTH_SHORT).show();
                 }
             },null);
         } catch (CameraAccessException e) {

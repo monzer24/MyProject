@@ -99,6 +99,7 @@ public class FirebaseConnection implements Connection<String, Object> {
     @Override
     public String addCheck(String url, Map<String ,Object> info, User user) {
         info.put("picture", url);
+        info.put("Sender", user);
         String docId = (String) info.get("id");
         try {
             store.collection("Checks").document(docId).set(info).addOnSuccessListener(new OnSuccessListener<Void>() {
@@ -289,12 +290,12 @@ public class FirebaseConnection implements Connection<String, Object> {
 
     private void sendToBank(DocumentSnapshot doc, User user){
         Map<String, Object> bankData = new HashMap<>();
-        bankData.put("User", user);
+        bankData.put("Recipient User", user);
         bankData.put("Check", doc.getData());
         bankData.put("id", doc.getId());
-        store.collection("Cashed Checks").add(bankData).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+        store.collection("Cashed Checks").document(doc.getId()).set(bankData).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
-            public void onSuccess(DocumentReference documentReference) {
+            public void onSuccess(Void aVoid) {
                 store.collection("Checks").document(doc.getId()).delete().addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {

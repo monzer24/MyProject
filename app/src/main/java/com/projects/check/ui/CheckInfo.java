@@ -17,6 +17,8 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import com.projects.check.model.Check;
 import com.projects.check.database.FirebaseConnection;
 import com.projects.check.R;
@@ -68,19 +70,30 @@ public class CheckInfo extends Activity {
         // Upload the taken photo to storage firebase;
         @Override
         public void onClick(View v) {
-            Check check = new Check();
-            check.setBankBranch(branch.getSelectedItem().toString());
-            check.setRecipientName(name.getText().toString());
-            check.setAmount(jodAmount.getText().toString(), filsAmount.getText().toString());
-            check.setCheckDate(date.getText().toString());
-            String id = "\"" + checker.getText().toString() + "\" " + whichBranch(branch.getSelectedItemPosition()) + ":" + user.getBankAccountNumber();
-            check.setCheckId(id);
-            Bitmap bit = ((BitmapDrawable)capturedImage.getDrawable()).getBitmap();
-            ByteArrayOutputStream stream = new ByteArrayOutputStream();
-            bit.compress(Bitmap.CompressFormat.PNG, 100, stream);
-            byte[] bytes = stream.toByteArray();
+            // Checking out the fields.
+            if(branch.getSelectedItemPosition() != 0
+                    && !name.getText().toString().equals("")
+                    && !checker.getText().toString().equals("")
+                    && !date.getText().toString().equals("")
+                    && !jodAmount.getText().toString().equals("")
+                    && !filsAmount.getText().toString().equals("")) {
 
-           upload(bytes, check);
+                Check check = new Check();
+                check.setBankBranch(branch.getSelectedItem().toString());
+                check.setRecipientName(name.getText().toString());
+                check.setAmount(jodAmount.getText().toString(), filsAmount.getText().toString());
+                check.setCheckDate(date.getText().toString());
+                String id = "\"" + checker.getText().toString() + "\" " + whichBranch(branch.getSelectedItemPosition()) + ":" + user.getBankAccountNumber();
+                check.setCheckId(id);
+                Bitmap bit = ((BitmapDrawable) capturedImage.getDrawable()).getBitmap();
+                ByteArrayOutputStream stream = new ByteArrayOutputStream();
+                bit.compress(Bitmap.CompressFormat.PNG, 100, stream);
+                byte[] bytes = stream.toByteArray();
+
+                upload(bytes, check);
+            }else{
+                Toast.makeText(CheckInfo.this, "Please make sure that all the fields are filled brfore submitting", Toast.LENGTH_LONG).show();
+            }
 
         }
     };

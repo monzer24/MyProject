@@ -39,7 +39,7 @@ public class CheckInfo extends Activity {
                     .setPositiveButton("Delete", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
-
+                            connection.reject(check);
                         }
                     })
                     .setNegativeButton("Call", new DialogInterface.OnClickListener() {

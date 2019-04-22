@@ -66,9 +66,9 @@ public class RetrieveCheck extends Activity {
         connection = new FirebaseConnection(this);
         connection.initConnection();
         if(cash.isEnabled()){
-            cash.setOnClickListener(this.checkCash());
+            cash.setOnClickListener(this.checkCash);
         }
-        search.setOnClickListener(this.searchForCheck());
+        search.setOnClickListener(this.searchForCheck);
     }
 
     private void showViews(View[] views) {
@@ -77,25 +77,23 @@ public class RetrieveCheck extends Activity {
         }
     }
 
-    private View.OnClickListener searchForCheck() {
-        if(searchText.getText() == null){
-            Toast.makeText(RetrieveCheck.this, "Please enter checkID to get the check", Toast.LENGTH_SHORT).show();
-            return null;
-        }
-        return new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+    private View.OnClickListener searchForCheck = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            if(searchText.getText().toString().equals("")){
+                Toast.makeText(RetrieveCheck.this, "Please enter checkID to get the check", Toast.LENGTH_SHORT).show();
+                System.out.println("null");
+            }else{
                 connection.retrieveCheck(searchText.getText().toString(), user);
             }
-        };
-    }
+        }
+    };
 
-    private View.OnClickListener checkCash() {
-        return new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                connection.cashCheck(info.getCheckId(), user);
-            }
-        };
-    }
+    private View.OnClickListener checkCash = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            connection.cashCheck(info.getCheckId(), user);
+        }
+    };
+
 }

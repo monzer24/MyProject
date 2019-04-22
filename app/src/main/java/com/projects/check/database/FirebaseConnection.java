@@ -256,6 +256,7 @@ public class FirebaseConnection implements Connection<String, Object> {
         store.collection("Checks").document(id).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
             public void onSuccess(DocumentSnapshot doc) {
+                System.out.println(doc.getString("recipientName") + " " + user.getFullName());
                 if(doc != null && user.getFullName().equals(doc.getString("recipientName").trim()) && user.getBankBranch().equals(doc.getString("bankBranch"))) {
                     Check check = new Check();
                     check.setCheckId(id);

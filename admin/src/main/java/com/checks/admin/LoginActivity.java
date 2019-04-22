@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class LoginActivity extends Activity {
 
@@ -16,10 +17,14 @@ public class LoginActivity extends Activity {
     private View.OnClickListener logIn = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            adminUser = new AdminUser();
-            adminUser.setUserName(accountNo.getText().toString());
-            adminUser.setPassword(password.getText().toString());
-            connection.logIn(adminUser);
+            if(!accountNo.getText().toString().equals("") && !password.getText().toString().equals("")) {
+                adminUser = new AdminUser();
+                adminUser.setUserName(accountNo.getText().toString());
+                adminUser.setPassword(password.getText().toString());
+                connection.logIn(adminUser);
+            }else{
+                Toast.makeText(LoginActivity.this, "Please make sure that you have entered your user name and the password", Toast.LENGTH_LONG).show();
+            }
         }
     };
 

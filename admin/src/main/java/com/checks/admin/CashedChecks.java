@@ -1,6 +1,8 @@
 package com.checks.admin;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -9,7 +11,6 @@ import java.util.List;
 public class CashedChecks extends Activity {
 
     private RecyclerView checksView;
-    private List<Check> checksList;
     RecyclerView.LayoutManager manager;
 
     @Override
@@ -25,6 +26,13 @@ public class CashedChecks extends Activity {
             checksView.setHasFixedSize(true);
             checksView.setLayoutManager(manager);
             checksView.setAdapter(adapter);
+        }else{
+            new AlertDialog.Builder(this)
+                    .setIcon(R.drawable.check)
+                    .setTitle("Login Failed, ")
+                    .setMessage("No cashed checks for now, good job !")
+                    .setNegativeButton("Exit",null)
+                    .show();
         }
     }
 }

@@ -52,7 +52,6 @@ public class ChoosingAction extends Activity {
                 Intent in = new Intent(ChoosingAction.this, RetrieveCheck.class);
                 in.putExtra("user", user);
                 startActivity(in);
-                finish();
             }
         };
     }
@@ -64,7 +63,6 @@ public class ChoosingAction extends Activity {
                 Intent in = new Intent(ChoosingAction.this, CameraActivity.class);
                 in.putExtra("user", user);
                 startActivity(in);
-                finish();
             }
         };
     }

@@ -6,7 +6,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
 import com.checks.admin.database.FirebaseConnection;
 import com.checks.admin.R;
 import com.checks.admin.model.AdminUser;

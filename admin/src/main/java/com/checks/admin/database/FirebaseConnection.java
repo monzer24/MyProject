@@ -6,7 +6,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.widget.Toast;
-
 import com.checks.admin.R;
 import com.checks.admin.model.AdminUser;
 import com.checks.admin.model.Check;

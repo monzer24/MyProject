@@ -157,7 +157,7 @@ public class FirebaseConnection implements Connection<String, Object> {
                         user.setFullName(doc.getString("name"));
                         user.setPhoneNumber(doc.getString("phoneNo"));
                         user.setBankBranch(doc.getString("branch"));
-                        user.setBalance(Double.parseDouble(doc.getString("balance")));
+                        user.setBalance(doc.getString("balance"));
                         user.setSsn(doc.getString("ssn"));
                         Intent in = new Intent(context, ChoosingAction.class);
                         Toast.makeText(context, "Logged in Successfully" + user.getFullName(), Toast.LENGTH_SHORT).show();

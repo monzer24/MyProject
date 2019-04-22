@@ -1,9 +1,15 @@
 package com.checks.admin;
 
+import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.ClipData;
+import android.content.ClipboardManager;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.annotation.NonNull;
+import android.widget.Toast;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.FirebaseApp;
@@ -91,6 +97,42 @@ public class FirebaseConnection implements Connection {
                             .show();
                 }
 
+            }
+        });
+    }
+
+    @Override
+    public void accept(final Check check) {
+        double recipientBalance = Double.parseDouble(check.getAmount()) + Double.parseDouble(check.getRecipient().getBalance());
+        System.out.println(String.valueOf(recipientBalance));
+        final double senderBalance = Double.parseDouble(check.getSender().getBalance()) - Double.parseDouble(check.getAmount());
+        System.out.println(String.valueOf(senderBalance));
+
+        store.collection("Users").document(check.getRecipient().getBankAccountNumber()).update("balance", String.valueOf(recipientBalance)).addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task) {
+                store.collection("Users").document(check.getSender().getBankAccountNumber()).update("balance", String.valueOf(senderBalance)).addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        store.collection("Cashed Checks").document(check.getId()).delete().addOnCompleteListener(new OnCompleteListener<Void>() {
+                            @Override
+                            public void onComplete(@NonNull Task<Void> task) {
+                                context.startActivity(new Intent(context, CashedChecks.class));
+                            }
+                        });
+                    }
+                });
+            }
+        });
+    }
+
+    @Override
+    public void reject(final Check check) {
+        store.collection("Cashed Checks").document(check.getId()).delete().addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task) {
+                context.startActivity(new Intent(context, LoginActivity.class));
+                ((Activity)context).finish();
             }
         });
     }

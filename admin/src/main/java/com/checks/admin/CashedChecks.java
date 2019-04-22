@@ -19,11 +19,12 @@ public class CashedChecks extends Activity {
         List<Check> checks = (List<Check>) getIntent().getSerializableExtra("checks");
         CheckAdapter adapter = new CheckAdapter(checks, this);
 
-        System.out.println(checks.size());
-        checksView  = findViewById(R.id.r_view);
-        manager = new LinearLayoutManager(this);
-        checksView.setHasFixedSize(true);
-        checksView.setLayoutManager(manager);
-        checksView.setAdapter(adapter);
+        if(checks != null && checks.size() > 0) {
+            checksView = findViewById(R.id.r_view);
+            manager = new LinearLayoutManager(this);
+            checksView.setHasFixedSize(true);
+            checksView.setLayoutManager(manager);
+            checksView.setAdapter(adapter);
+        }
     }
 }

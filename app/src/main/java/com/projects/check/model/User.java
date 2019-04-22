@@ -9,7 +9,7 @@ public class User implements Serializable {
     private String password;
     private String bankBranch;
     private String bankAccountNumber;
-    private double balance;
+    private String balance;
     private String ssn;
 
     public String getSsn() {
@@ -20,11 +20,11 @@ public class User implements Serializable {
         this.ssn = ssn;
     }
 
-    public double getBalance() {
-        return balance;
+    public String getBalance() {
+        return String.valueOf(balance);
     }
 
-    public void setBalance(double balance) {
+    public void setBalance(String balance) {
         this.balance = balance;
     }
 

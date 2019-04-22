@@ -28,6 +28,7 @@
             android:layout_margin="8dp"
             android:background="@drawable/rounded"
             android:hint="User Name"
+            android:text="monzer24"
             android:inputType="text"
             android:textAlignment="center" />
 
@@ -38,6 +39,7 @@
             android:layout_margin="8dp"
             android:background="@drawable/rounded"
             android:hint="Password"
+            android:text="12345"
             android:inputType="textPassword"
             android:textAlignment="center" />
 

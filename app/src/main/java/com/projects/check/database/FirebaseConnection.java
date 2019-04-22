@@ -53,9 +53,9 @@ public class FirebaseConnection implements Connection<String, Object> {
     public void uploadImage(byte[] bytes, Map<String, Object> info, User user) {
         StorageReference ref = storage.child("images/" + new Date().toString());
         UploadTask uploadTask = ref.putBytes(bytes); // start uploading
-        System.out.println(user.getBalance() <= Double.parseDouble((String) info.get("amount")));
+        System.out.println(Double.parseDouble(user.getBalance()) <= Double.parseDouble((String) info.get("amount")));
 
-        if(Double.parseDouble((String) info.get("amount")) <= user.getBalance()){
+        if(Double.parseDouble((String) info.get("amount")) <= Double.parseDouble(user.getBalance())){
 
             dia = new ProgressDialog(context);
             dia.setMessage("Uploading ...");

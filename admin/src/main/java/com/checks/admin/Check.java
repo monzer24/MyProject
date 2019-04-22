@@ -4,11 +4,11 @@ import java.io.Serializable;
 
 public class Check implements Serializable {
 
-    private String checkId;
-    private String checkImage;
+    private String id;
+    private String picture;
     private String bankBranch;
     private String amount;
-    private String checkDate;
+    private String date;
 
     private User sender;
     private User recipient;
@@ -29,12 +29,12 @@ public class Check implements Serializable {
         this.recipient = recipient;
     }
 
-    public String getCheckImage() {
-        return checkImage;
+    public String getPicture() {
+        return picture;
     }
 
-    public void setCheckImage(String checkImage) {
-        this.checkImage = checkImage;
+    public void setPicture(String picture) {
+        this.picture = picture;
     }
 
     public String getBankBranch() {
@@ -53,20 +53,20 @@ public class Check implements Serializable {
         this.amount = amount;
     }
 
-    public String getCheckDate() {
-        return checkDate;
+    public String getDate() {
+        return date;
     }
 
-    public void setCheckDate(String checkDate) {
-        this.checkDate = checkDate;
+    public void setDate(String date) {
+        this.date = date;
     }
 
-    public String getCheckId() {
-        return checkId;
+    public String getId() {
+        return id;
     }
 
-    public void setCheckId(String checkId) {
-        this.checkId = checkId;
+    public void setId(String id) {
+        this.id = id;
     }
 }
 

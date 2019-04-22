@@ -121,13 +121,23 @@ public class FirebaseConnection implements Connection {
                         store.collection("Cashed Checks").document(check.getId()).delete().addOnCompleteListener(new OnCompleteListener<Void>() {
                             @Override
                             public void onComplete(@NonNull Task<Void> task) {
-                                context.startActivity(new Intent(context, CashedChecks.class));
-                                new AlertDialog.Builder(context)
-                                        .setIcon(R.drawable.check)
-                                        .setTitle("Transaction Successes")
-                                        .setMessage(check.getSender().getFullName() + "'s balance has became " + senderBalance + "\n and " + check.getRecipient().getFullName() + "'s balance has become " + recipientBalance)
-                                        .setNeutralButton("OK", null)
-                                        .show();
+                                store.collection("Bank").document(check.getRecipient().getBankAccountNumber()).update("balance", String.valueOf(recipientBalance)).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                    @Override
+                                    public void onComplete(@NonNull Task<Void> task) {
+                                        store.collection("Bank").document(check.getSender().getBankAccountNumber()).update("balance", String.valueOf(senderBalance)).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                            @Override
+                                            public void onComplete(@NonNull Task<Void> task) {
+                                                context.startActivity(new Intent(context, CashedChecks.class));
+                                                new AlertDialog.Builder(context)
+                                                        .setIcon(R.drawable.check)
+                                                        .setTitle("Transaction Successes")
+                                                        .setMessage(check.getSender().getFullName() + "'s balance has became " + senderBalance + "\n and " + check.getRecipient().getFullName() + "'s balance has become " + recipientBalance)
+                                                        .setNeutralButton("OK", null)
+                                                        .show();
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                     }

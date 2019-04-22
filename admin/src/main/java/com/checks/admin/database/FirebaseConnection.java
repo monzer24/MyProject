@@ -5,6 +5,8 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.NonNull;
+import android.widget.Toast;
+
 import com.checks.admin.R;
 import com.checks.admin.model.AdminUser;
 import com.checks.admin.model.Check;
@@ -67,6 +69,7 @@ public class FirebaseConnection implements Connection {
                                     Intent in = new Intent(context, CashedChecks.class);
                                     System.out.println(checks.size());
                                     in.putExtra("checks", (Serializable) checks);
+                                    Toast.makeText(context, "Welcome !", Toast.LENGTH_SHORT).show();
                                     context.startActivity(in);
                                 }
                             }
@@ -104,7 +107,7 @@ public class FirebaseConnection implements Connection {
 
     @Override
     public void accept(final Check check) {
-        double recipientBalance = Double.parseDouble(check.getAmount()) + Double.parseDouble(check.getRecipient().getBalance());
+        final double recipientBalance = Double.parseDouble(check.getAmount()) + Double.parseDouble(check.getRecipient().getBalance());
         System.out.println(String.valueOf(recipientBalance));
         final double senderBalance = Double.parseDouble(check.getSender().getBalance()) - Double.parseDouble(check.getAmount());
         System.out.println(String.valueOf(senderBalance));
@@ -119,6 +122,12 @@ public class FirebaseConnection implements Connection {
                             @Override
                             public void onComplete(@NonNull Task<Void> task) {
                                 context.startActivity(new Intent(context, CashedChecks.class));
+                                new AlertDialog.Builder(context)
+                                        .setIcon(R.drawable.check)
+                                        .setTitle("Transaction Successes")
+                                        .setMessage(check.getSender().getFullName() + "'s balance has became " + senderBalance + "\n and " + check.getRecipient().getFullName() + "'s balance has become " + recipientBalance)
+                                        .setNeutralButton("OK", null)
+                                        .show();
                             }
                         });
                     }

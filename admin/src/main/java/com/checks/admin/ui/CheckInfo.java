@@ -38,8 +38,8 @@ public class CheckInfo extends Activity {
             final Context context = CheckInfo.this;
             new AlertDialog.Builder(context)
                     .setIcon(R.drawable.check)
-                    .setTitle("Login Failed, ")
-                    .setMessage("Wrong Banck Account Number or Password")
+                    .setTitle("Reject Check")
+                    .setMessage("Delete check with id:" + check.getId() + " \nor call " + check.getSender().getPhoneNumber() +  " to report what is wrong with their check")
                     .setPositiveButton("Delete", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {

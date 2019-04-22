@@ -31,7 +31,7 @@ public class CashedChecks extends Activity {
         }else{
             new AlertDialog.Builder(this)
                     .setIcon(R.drawable.check)
-                    .setTitle("Login Failed, ")
+                    .setTitle("No Cashed Checks !")
                     .setMessage("No cashed checks for now, good job !")
                     .setNegativeButton("Exit",null)
                     .show();

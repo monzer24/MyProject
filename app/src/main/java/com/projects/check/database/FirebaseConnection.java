@@ -168,7 +168,7 @@ public class FirebaseConnection implements Connection<String, Object> {
                         new AlertDialog.Builder(context)
                                 .setIcon(R.drawable.check)
                                 .setTitle("Login Failed, ")
-                                .setMessage("Wrong Banck Account Number or Password")
+                                .setMessage("Wrong Bank Account Number or Password")
                                 .setPositiveButton("Close", null)
                                 .show();
                     }

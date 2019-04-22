@@ -9,6 +9,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.checks.admin.model.Check;
+import com.checks.admin.ui.CheckInfo;
+
 import java.io.Serializable;
 import java.util.List;
 

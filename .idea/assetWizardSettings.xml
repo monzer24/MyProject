@@ -63,12 +63,10 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
-                                      <entry key="backgroundColor" value="26394a" />
                                       <entry key="backgroundLayerName" value="ic_launcher_background" />
-                                      <entry key="foregroundImage" value="$PROJECT_DIR$/app/src/main/res/drawable/check.png" />
+                                      <entry key="foregroundImage" value="$PROJECT_DIR$/admin/src/main/res/drawable-v24/check.png" />
                                       <entry key="foregroundLayerName" value="check" />
-                                      <entry key="legacyIconShape" value="CIRCLE" />
-                                      <entry key="outputName" value="check_icon" />
+                                      <entry key="outputName" value="admin_check_icon" />
                                     </map>
                                   </option>
                                 </PersistentState>

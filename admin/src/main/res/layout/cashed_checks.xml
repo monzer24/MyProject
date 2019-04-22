@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/colorPrimaryDark"
-    tools:context=".CashedChecks">
+    tools:context=".ui.CashedChecks">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/r_view"
